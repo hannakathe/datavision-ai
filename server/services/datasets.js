@@ -75,7 +75,7 @@ const parseManualPayload = (body) => manualDataset(body, config);
 
 export function createManual(store, body) {
   const ds = parseManualPayload(body);
-  const id = store.createDataset({ ...ds, name: requireName(body.name), description: text(body.description, 500, 'descripción') || '', sourceType: 'manual', sourceDetail: 'Editor manual' });
+  const id = store.createDataset({ ...ds, name: requireName(body.name), description: text(body.description, 500, 'descripción') || '', sourceType: 'manual', sourceDetail: body.source === 'consola' ? 'Consola de datos' : 'Editor manual' });
   return store.getDataset(id);
 }
 

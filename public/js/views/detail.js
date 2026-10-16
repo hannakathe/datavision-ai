@@ -21,7 +21,8 @@ async function downloadCsv(id) {
   try {
     const { name, csv } = await api.exportCsv(id);
     const url = URL.createObjectURL(new Blob(['﻿', csv], { type: 'text/csv;charset=utf-8' }));
-    const a = h('a', { href: url, download: `${name.replace(/[^w-áéíóúñÁÉÍÓÚÑ ]+/g, '').trim().replace(/s+/g, '_') || 'datos'}.csv` });
+    const safe = name.replace(/[^\w\-áéíóúñÁÉÍÓÚÑ ]+/g, '').trim().replace(/\s+/g, '_') || 'datos';
+    const a = h('a', { href: url, download: `${safe}.csv` });
     document.body.append(a);
     a.click();
     a.remove();

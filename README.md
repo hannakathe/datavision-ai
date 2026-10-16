@@ -4,13 +4,24 @@ Aplicación web para el taller **«Aplicación de la IA en el mundo empresarial 
 
 DataVision AI **no es un dashboard fijo de ventas**: es un generador de dashboards. Recibe conjuntos de datos de cualquier área (ventas, inventario, talento humano, finanzas, operaciones, encuestas, proyectos o datos propios), detecta las columnas y sus tipos, evalúa la calidad de los datos, propone indicadores y gráficas adecuados a la estructura encontrada y explica los patrones con un análisis estadístico basado en reglas.
 
-> Proyecto académico para ejecución local. No está preparado para producción empresarial (ver [Limitaciones](#limitaciones-conocidas)).
+> Proyecto académico. No está preparado para producción empresarial (ver [Limitaciones](#limitaciones-conocidas)).
+
+### Dos formas de usarla
+
+| | **Versión local** (`npm start` / `npm run dev`) | **GitHub Pages** (versión estática) |
+|---|---|---|
+| Dónde se procesan los datos | Servidor Node.js en tu equipo | Solo en el navegador de quien la abre |
+| Almacenamiento | SQLite (`storage/datavision.sqlite`) | IndexedDB del navegador (cada persona ve solo sus datos) |
+| CSV, JSON, XLSX, editor manual, consola de datos, dashboards, análisis | ✅ | ✅ |
+| Archivos SQLite y consola de Node.js (`npm run import`) | ✅ | ❌ (requieren servidor) |
+
+La interfaz detecta sola el modo: si existe el servidor usa SQLite; si no (por ejemplo en `*.github.io`), usa el navegador. La barra lateral indica en qué modo estás.
 
 ## Contenido
 
 - [Requisitos](#requisitos-previos) · [Instalación y ejecución](#instalación-y-ejecución) · [Comandos](#comandos-disponibles) · [Configuración](#configuración)
 - [Entrada de datos](#métodos-de-entrada-de-datos) · [Gestión y validación](#gestión-procesamiento-y-validación) · [Dashboards](#generador-dinámico-de-dashboards) · [Análisis inteligente](#análisis-inteligente)
-- [Pruebas](#pruebas) · [Estructura](#estructura-del-proyecto) · [API](#api-rest-interna) · [Seguridad y limitaciones](#limitaciones-conocidas) · [Ejecución local](#ejecución-local-y-publicación-opcional)
+- [Pruebas](#pruebas) · [Estructura](#estructura-del-proyecto) · [API](#api-rest-interna) · [Seguridad y limitaciones](#limitaciones-conocidas) · [Publicar en GitHub Pages](#publicar-en-github-pages)
 
 ## Tecnologías
 
@@ -63,6 +74,8 @@ npm run dev
 | `npm run cli -- list` | Lista los conjuntos almacenados |
 | `npm run cli -- delete <id>` | Elimina un conjunto |
 | `npm run seed` | Carga los datos de demostración que falten |
+| `npm run build:pages` | Genera la versión estática para GitHub Pages en `dist/` |
+| `npm run preview:pages` | Sirve `dist/` en `http://localhost:4173/datavision-ai/` como lo haría Pages |
 | `npm run demo:generate` | Regenera (de forma determinista) los archivos de `data/demo` y `data/samples` |
 
 ## Configuración
@@ -88,9 +101,10 @@ Ejemplo en PowerShell: `$env:PORT=4000; npm start` · en bash: `PORT=4000 npm st
 | Archivo CSV / TSV / TXT | ✅ Funciona y probado | Interfaz «Importar datos», consola |
 | Archivo JSON | ✅ Funciona y probado | Interfaz, consola |
 | Excel `.xlsx` | ✅ Funciona y probado | Interfaz (selección de hoja), consola (`--sheet`) |
-| Archivo SQLite `.db/.sqlite/.sqlite3` | ✅ Funciona y probado | Interfaz (selección de tabla), consola (`--table`) |
+| Archivo SQLite `.db/.sqlite/.sqlite3` | ✅ Funciona y probado (solo versión local) | Interfaz (selección de tabla), consola (`--table`) |
 | Editor manual / pegar desde Excel | ✅ Funciona y probado | «Editor manual» |
-| Consola de Node.js | ✅ Funciona y probado | `npm run import` |
+| Consola de datos en la app (comandos) | ✅ Funciona y probado (local y Pages) | Menú «Consola de datos» |
+| Consola de Node.js | ✅ Funciona y probado (solo versión local) | `npm run import` |
 | API REST externa | ⏳ Ampliación futura, **no implementado** | Arquitectura preparada |
 | PostgreSQL / MySQL / SQL Server | ⏳ Ampliación futura, **no implementado** | Arquitectura preparada |
 | Archivos `.xls` (Excel 97-2003) | ❌ No soportado | Guardar como `.xlsx` o CSV |
@@ -114,7 +128,35 @@ Formatos reconocidos:
 
 Menú **Editor manual**: escribe el nombre del conjunto, edita los encabezados, añade/elimina filas y columnas y guarda. En **«Pegar datos desde Excel, Google Sheets o texto»** puedes pegar un rango copiado (tabulaciones, `;` o `,`). Los tipos se detectan al guardar. Un conjunto existente de hasta 2000 filas puede editarse desde su vista de detalle (**Editar datos**).
 
-### C. Consola de Node.js
+### C. Consola de datos (dentro de la aplicación)
+
+Menú **Consola de datos**: una terminal dentro de la interfaz para ingresar datos escribiendo comandos. Funciona igual en la versión local y en GitHub Pages. **Enter** ejecuta, **Mayús+Enter** añade otra línea y **↑/↓** recorren el historial. Los valores se separan con comas (o punto y coma / tabulación); usa comillas para valores con comas: `"Rojo, grande", 5`.
+
+| Comando | Qué hace |
+|---|---|
+| `nuevo <nombre> \| col1, col2, …` | Empieza un conjunto nuevo con esas columnas |
+| `fila v1, v2, …` | Añade una fila (varias con Mayús+Enter) |
+| `csv <nombre>` + líneas siguientes | Crea el conjunto desde texto CSV (la primera línea son los encabezados) |
+| `ver` · `deshacer` · `cancelar` | Revisar, quitar la última fila o descartar |
+| `guardar [descripción]` | Valida y guarda (muestra tipos detectados y advertencias) |
+| `listar` · `info <id>` | Conjuntos guardados / columnas, tipos y vacíos de uno |
+| `agregar <id> \| v1, v2, …` | Añade filas a un conjunto existente (hasta 2000 filas) |
+| `abrir <id>` | Abre su dashboard |
+| `eliminar <id> confirmar` | Elimina (exige escribir «confirmar») |
+| `demo` · `limpiar` · `ayuda` | Cargar demos, limpiar pantalla, ver ayuda |
+
+Ejemplo:
+
+```
+nuevo Inventario tienda | producto, categoria, stock, precio
+fila Cuaderno, Papelería, 40, 5200
+fila Calculadora, Tecnología, 12, 45000
+guardar Inventario cargado por consola
+```
+
+Los comandos son un lenguaje propio interpretado por la aplicación: el texto **nunca se ejecuta como código**.
+
+### D. Consola de Node.js (versión local)
 
 ```bash
 npm run import -- data/samples/proyectos.json --name "Proyectos TI" --description "Cartera 2025"
@@ -138,13 +180,13 @@ Salida de ejemplo:
 
 Si falla (archivo inexistente, JSON inválido, archivo sin filas, tabla inexistente…) se muestra `✖ La operación falló: <motivo>` y el proceso termina con código 1. La consola escribe en la misma base SQLite que el servidor; recarga la página para ver el conjunto nuevo.
 
-### D. Base de datos SQLite
+### E. Base de datos SQLite (versión local)
 
 - **Almacenamiento interno**: todo se guarda en `storage/datavision.sqlite` (tablas `datasets`, `dataset_rows`, `dashboards`, `meta`), con sentencias preparadas y borrado en cascada.
 - **Conector de importación**: sube un archivo `.db/.sqlite/.sqlite3` (o usa `--table` en consola). Se verifica la firma del archivo, se abre en **modo solo lectura** en una copia temporal, se listan las tablas y vistas y solo se puede leer una tabla **de esa lista** (identificador entrecomillado). **No se permite SQL arbitrario.**
 - **Consulta segura**: `POST /api/datasets/:id/query` acepta una consulta estructurada (filtros, búsqueda, orden, columnas, paginación) validada contra el esquema; nunca texto SQL.
 
-### E. Arquitectura extensible de importadores
+### F. Arquitectura extensible de importadores
 
 `server/importers/index.js` registra los conectores. Cada uno implementa `parse(buffer, opciones) → { columns, rows, warnings, meta }`; la normalización, detección de tipos, validación y guardado son comunes (`server/services/ingest.js`). Para añadir, por ejemplo, un conector REST: crear `server/importers/rest.js` con esa firma, registrarlo y exponer una ruta que reciba la URL validada. Los conectores REST y de otros motores figuran como «planificado» en la interfaz y **no están implementados**.
 
@@ -204,18 +246,19 @@ Muestras para probar casos no incluidos en los ejemplos (`data/samples/`): `proy
 npm test
 ```
 
-Resultado de la última ejecución: **28 pruebas, 28 aprobadas, 0 fallidas**.
+Resultado de la última ejecución: **31 pruebas, 31 aprobadas, 0 fallidas**.
 
 | Archivo | Cubre |
 |---|---|
 | `test/core.test.js` | Conversión de números/fechas/booleanos, inferencia de tipos y roles, calidad (vacíos, inválidos, duplicados, atípicos, fórmulas), KPI y gráficas para esquemas distintos, validación de gráficas engañosas, filtros, «Otros», saneamiento de configuraciones, análisis (respaldo, no causalidad, datos insuficientes, conjunto vacío) |
 | `test/importers.test.js` | CSV (coma, `;`, Latin-1), JSON anidado, XLSX con fórmulas y fechas, SQLite (tablas, nombre de tabla malicioso, archivo falso), JSON inválido, archivo vacío, extensión no soportada, encabezados `__proto__`/vacíos/repetidos |
 | `test/api.test.js` | Rutas principales y estáticos, cabeceras de seguridad, importación CSV/JSON/XLSX/SQLite por HTTP, archivo > límite (413), conjunto vacío, entrada manual y su validación, renombrar, cambiar tipos, consulta segura, limpieza en copia, exportación con escape de fórmulas, eliminación en cascada, configuraciones de dashboard (guardar/recuperar/actualizar/eliminar), **persistencia tras cerrar y reabrir SQLite**, carga única de demos |
-| `test/cli.test.js` | Importación por consola (CSV, JSON, SQLite), `list`, `delete` y mensajes/códigos de error |
+| `test/cli.test.js` | Importación por consola de Node (CSV, JSON, SQLite), `list`, `delete` y mensajes/códigos de error |
+| `test/pages.test.js` | Separación de valores de la consola de datos, reglas de gestión compartidas con el modo navegador y generación de la versión estática (archivos y rutas relativas) |
 
-**Pruebas manuales realizadas en el navegador** (no automatizadas): carga de dashboards de varios conjuntos, clic en barras para ver los registros que las respaldan, filtros por casillas, pestaña de análisis con filtros, importación de un CSV nuevo por arrastrar y soltar → dashboard, editor manual con pegado de datos y fila añadida, guardado de configuración y recuperación tras recargar, vista móvil (375 px, sin desplazamiento horizontal) y modos claro/oscuro.
+**Pruebas manuales realizadas en el navegador** (no automatizadas): carga de dashboards de varios conjuntos, clic en barras para ver los registros que las respaldan, filtros por casillas, pestaña de análisis con filtros, importación de un CSV nuevo por arrastrar y soltar → dashboard, editor manual con pegado de datos y fila añadida, guardado de configuración y recuperación tras recargar, vista móvil (375 px, sin desplazamiento horizontal) y modos claro/oscuro. En la **versión estática** (`npm run preview:pages`): carga automática de los 5 demos (incluido el Excel) sin servidor, consola de datos (nuevo, fila, guardar, agregar, info, eliminar con confirmación, errores), importación de CSV → dashboard, guardar configuración y recuperarla tras recargar, cambio de tipo, limpieza, exportación CSV y rechazo de archivos SQLite con explicación.
 
-**No probado**: lectores de pantalla reales, navegadores distintos de Chromium y conjuntos cercanos al límite de 50 000 filas.
+**No probado**: lectores de pantalla reales, navegadores distintos de Chromium, conjuntos cercanos al límite de 50 000 filas y la publicación real en GitHub Pages (depende de tu push y de activar Pages; ver [Publicar en GitHub Pages](#publicar-en-github-pages)).
 
 ## Estructura del proyecto
 
@@ -228,17 +271,22 @@ Resultado de la última ejecución: **28 pruebas, 28 aprobadas, 0 fallidas**.
 │   ├── errors.js           AppError y manejador centralizado
 │   ├── routes/api.js       Rutas REST
 │   ├── importers/          csv.js, json.js, xlsx.js, sqlite.js, index.js (registro)
-│   └── services/           ingest.js (normalización), datasets.js (negocio), demo.js
+│   └── services/           ingest.js, datasets.js (negocio con SQLite), demo.js
 ├── public/
 │   ├── index.html, css/styles.css, favicon.svg
 │   └── js/
-│       ├── core/           types, stats, quality, data, dashboard, insights, format (compartidos con el servidor)
-│       ├── views/          home, import, editor, datasets, detail, dashboard, records, validation
+│       ├── core/           types, stats, quality, data, dashboard, insights, format, parsers,
+│       │                   ingest, clean, manage, errors, demo-list (compartidos con el servidor)
+│       ├── views/          home, import, editor, console, datasets, detail, dashboard, records, validation
 │       ├── app.js          Enrutador y estructura
-│       ├── api.js, ui.js, charts.js, state.js
-├── scripts/                cli.js (consola), generate-demo.js
+│       ├── api.js          Elige servidor (SQLite) o modo navegador
+│       ├── local-api.js    Modo navegador: IndexedDB + lectura de archivos en el navegador
+│       ├── ui.js, charts.js, state.js
+├── scripts/                cli.js (consola Node), generate-demo.js, build-pages.js, preview-pages.js
+├── .github/workflows/      pages.yml (publicación automática en GitHub Pages)
 ├── data/demo, data/samples Datos ficticios y muestras de prueba
 ├── test/                   Pruebas node:test
+├── dist/                   Versión estática generada (ignorada por git)
 └── storage/                Base SQLite local (se crea al iniciar; ignorada por git)
 ```
 
@@ -274,9 +322,27 @@ Limitaciones:
 - La línea de proyección es una regresión lineal simple sin estacionalidad: es ilustrativa, no un modelo de pronóstico.
 - Conectores REST y de otros motores SQL: solo arquitectura; no implementados.
 - `node:sqlite` aún es experimental en Node 24 (funciona, pero su API podría cambiar).
+- **GitHub Pages**: los datos viven en el navegador de cada visitante (se pierden si borra los datos del sitio y no se comparten entre personas ni equipos); no hay importación de SQLite ni consola de Node; los archivos se procesan en el navegador con el mismo límite de 5 MB.
 
-## Ejecución local y publicación (opcional)
+## Publicar en GitHub Pages
 
-La aplicación está pensada para **ejecutarse en local** con `npm start`: no requiere publicarse en internet. Los datos quedan en `storage/datavision.sqlite` y persisten entre reinicios; para empezar de cero basta con detener el servidor y borrar la carpeta `storage/`.
+GitHub Pages solo sirve archivos estáticos: no puede ejecutar el servidor Node. Por eso el repositorio incluye una **versión estática** (`npm run build:pages`) y un workflow (`.github/workflows/pages.yml`) que la publica automáticamente. Si al abrir la página ves un 404 o el README, es porque Pages está sirviendo la rama directamente (y ahí no hay un `index.html` en la raíz): hay que cambiar la fuente a **GitHub Actions**.
 
-Solo si en el futuro se quisiera publicar en un servidor Node.js: usar `HOST=0.0.0.0`, apuntar `DATA_DIR` a un disco persistente (muchos servicios gratuitos borran los archivos al reiniciar) y añadir antes autenticación y HTTPS. La aplicación no se ha publicado y no tiene URL pública.
+1. Haz commit y push a `main` (incluida la carpeta `.github/`).
+2. En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Abre la pestaña **Actions**: el workflow «Publicar en GitHub Pages» instala dependencias, ejecuta `npm test`, genera `dist/` y la publica. Si no se inició solo, ejecútalo con **Run workflow**.
+4. Al terminar, la URL aparece en el resumen del workflow y en Settings → Pages (normalmente `https://hannakathe.github.io/datavision-ai/`).
+
+Para probar la versión estática en tu equipo antes de publicarla:
+
+```bash
+npm run build:pages
+```
+
+```bash
+npm run preview:pages
+```
+
+y abre `http://localhost:4173/datavision-ai/`.
+
+La versión local con servidor (`npm start` o `npm run dev`) no cambia y sigue usando SQLite. Para empezar de cero en local, detén el servidor y borra la carpeta `storage/`; en Pages, borra los datos del sitio desde el navegador.

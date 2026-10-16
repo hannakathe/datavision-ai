@@ -7,6 +7,7 @@ import { STATUS_LABELS } from '../core/quality.js';
 import { TYPE_LABELS } from '../core/types.js';
 import { fmtNumber } from '../core/format.js';
 import { EDITOR_MAX_ROWS } from './detail.js';
+import { splitValues } from '../core/manage.js';
 
 const HELP = [
   ['ayuda', 'Muestra esta lista de comandos.'],
@@ -27,22 +28,6 @@ const HELP = [
 ];
 
 const session = { draft: null, history: [], lines: [] };
-
-// Divide una línea en valores respetando comillas. Separador: tabulación, punto y coma o coma (en ese orden).
-export function splitValues(line) {
-  const sep = line.includes('\t') ? '\t' : line.includes(';') ? ';' : ',';
-  const out = [];
-  let cur = '';
-  let quoted = false;
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
-    if (ch === '"') {
-      if (quoted && line[i + 1] === '"') { cur += '"'; i++; } else quoted = !quoted;
-    } else if (ch === sep && !quoted) { out.push(cur.trim()); cur = ''; } else cur += ch;
-  }
-  out.push(cur.trim());
-  return out;
-}
 
 function splitPipe(rest) {
   const i = rest.indexOf('|');
@@ -76,7 +61,7 @@ export async function runCommand(input, print) {
       if (!columns.length) throw new Error('Indica al menos una columna.');
       if (new Set(columns.map((c) => c.toLowerCase())).size !== columns.length) throw new Error('Hay nombres de columna repetidos.');
       session.draft = { name, columns, rows: [] };
-      print('ok', `Conjunto «${name}» en preparación con ${columns.length} columna(s): ${columns.join(', ')}. Añade filas con «fila …».`);
+      print('ok', `Conjunto «${name}» en preparación con ${columns.length} columna(s): ${columns.map((c) => `«${c}»`).join(', ')}. Añade filas con «fila …».`);
       return;
     }
     case 'csv': {

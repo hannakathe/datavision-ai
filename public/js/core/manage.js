@@ -60,3 +60,19 @@ export function cleanedDataset(dataset, rows, body, limits) {
   ds.validation = revalidate(ds.rows, ds.schema, report);
   return { ds, report };
 }
+
+// Divide una línea en valores respetando comillas. Separador: tabulación, punto y coma o coma (en ese orden).
+export function splitValues(line) {
+  const sep = line.includes('\t') ? '\t' : line.includes(';') ? ';' : ',';
+  const out = [];
+  let cur = '';
+  let quoted = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (quoted && line[i + 1] === '"') { cur += '"'; i++; } else quoted = !quoted;
+    } else if (ch === sep && !quoted) { out.push(cur.trim()); cur = ''; } else cur += ch;
+  }
+  out.push(cur.trim());
+  return out;
+}

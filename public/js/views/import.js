@@ -33,9 +33,7 @@ export async function importView(main) {
       h('aside', { class: 'card side' },
         h('h3', {}, 'Métodos de entrada'), h('ul', { class: 'methods' }, methods),
         h('h4', {}, 'Consola de datos (en la app)'),
-        h('pre', { class: 'code' }, 'nuevo Ventas | producto, cantidad
-fila Lápiz, 10
-guardar'),
+        h('pre', { class: 'code' }, 'nuevo Ventas | producto, cantidad\nfila Lápiz, 10\nguardar'),
         h('h4', {}, 'Consola de Node.js (versión local)'),
         h('pre', { class: 'code' }, 'npm run import -- ruta/archivo.csv --name "Mis ventas"'),
         h('p', { class: 'muted small' }, 'También admite --sheet (Excel), --table (SQLite) y --description. Recarga la lista de conjuntos para ver el resultado.'),
