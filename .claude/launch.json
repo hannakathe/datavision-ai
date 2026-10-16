@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "datavision",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--no-warnings", "server/index.js"],
+      "port": 3000
+    }
+  ]
+}

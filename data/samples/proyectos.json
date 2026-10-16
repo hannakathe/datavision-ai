@@ -1,0 +1,56 @@
+[
+  {
+    "proyecto": "Migración ERP",
+    "responsable": "Equipo A",
+    "estado": "En curso",
+    "avance_pct": 65,
+    "presupuesto": 120000000,
+    "inicio": "2025-02-01",
+    "prioridad": "Alta"
+  },
+  {
+    "proyecto": "App móvil",
+    "responsable": "Equipo B",
+    "estado": "Planeado",
+    "avance_pct": 5,
+    "presupuesto": 80000000,
+    "inicio": "2025-06-15",
+    "prioridad": "Media"
+  },
+  {
+    "proyecto": "Portal de clientes",
+    "responsable": "Equipo A",
+    "estado": "Terminado",
+    "avance_pct": 100,
+    "presupuesto": 45000000,
+    "inicio": "2024-09-01",
+    "prioridad": "Alta"
+  },
+  {
+    "proyecto": "BI comercial",
+    "responsable": "Equipo C",
+    "estado": "En curso",
+    "avance_pct": 40,
+    "presupuesto": 30000000,
+    "inicio": "2025-03-10",
+    "prioridad": "Alta"
+  },
+  {
+    "proyecto": "Capacitación",
+    "responsable": "Equipo C",
+    "estado": "En curso",
+    "avance_pct": 75,
+    "presupuesto": 12000000,
+    "inicio": "2025-01-20",
+    "prioridad": "Baja"
+  },
+  {
+    "proyecto": "Ciberseguridad",
+    "responsable": "Equipo B",
+    "estado": "Planeado",
+    "avance_pct": 0,
+    "presupuesto": 95000000,
+    "inicio": "2025-08-01",
+    "prioridad": "Alta"
+  }
+]

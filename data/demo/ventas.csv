@@ -1,0 +1,643 @@
+id_venta,fecha,region,canal,categoria,producto,vendedor,unidades,precio_unitario,descuento_pct,total
+V-0264,2025-01-01,Caribe,Tienda física,Tecnología,Monitor,Asesor 01,4,750000,5,2850000
+V-0338,2025-01-01,Andina,Distribuidor,Tecnología,Teclado,Asesor 05,2,120000,0,240000
+V-0111,2025-01-02,Andina,Distribuidor,Hogar,Cafetera,Asesor 06,16,340000,0,5440000
+V-0094,2025-01-03,Caribe,En línea,Hogar,Cafetera,Asesor 01,9,340000,0,3060000
+V-0515,2025-01-03,Andina,En línea,Hogar,Licuadora,Asesor 07,17,260000,5,4199000
+V-0143,2025-01-04,Andina,Tienda física,Tecnología,Teclado,Asesor 08,18,120000,0,2160000
+V-0068,2025-01-05,Amazonía,Tienda física,Deportes,Bicicleta estática,Asesor 04,14,1250000,5,16625000
+V-0145,2025-01-05,Orinoquía,En línea,Tecnología,Monitor,Asesor 02,17,750000,0,12750000
+V-0151,2025-01-05,Andina,En línea,Papelería,Kit de esferos,Asesor 03,16,15000,0,240000
+V-0346,2025-01-05,Andina,Tienda física,Hogar,Licuadora,Asesor 08,10,260000,0,2600000
+V-0494,2025-01-06,Caribe,Tienda física,Deportes,Balón,Asesor 05,15,85000,0,1275000
+V-0020,2025-01-07,Andina,Tienda física,Hogar,Licuadora,Asesor 02,10,260000,0,2600000
+V-0082,2025-01-07,Pacífica,Tienda física,Papelería,Kit de esferos,Asesor 08,1,15000,0,15000
+V-0137,2025-01-07,Pacífica,Distribuidor,Papelería,Agenda,Asesor 03,10,38000,0,380000
+V-0140,2025-01-07,Caribe,Tienda física,Papelería,Kit de esferos,Asesor 03,1,15000,0,15000
+V-0322,2025-01-07,Caribe,En línea,Tecnología,Monitor,Asesor 02,14,750000,10,9450000
+V-0613,2025-01-08,Caribe,Tienda física,Tecnología,Audífonos,Asesor 02,1,210000,15,178500
+V-0232,2025-01-09,Orinoquía,En línea,Tecnología,Monitor,Asesor 02,2,750000,0,1500000
+V-0115,2025-01-10,Amazonía,Tienda física,Deportes,Balón,Asesor 08,3,85000,0,255000
+V-0183,2025-01-10,Orinoquía,En línea,Papelería,Agenda,Asesor 06,18,38000,0,684000
+V-0204,2025-01-10,Andina,En línea,Papelería,Resma de papel,Asesor 06,6,22000,5,125400
+V-0543,2025-01-10,Andina,En línea,Tecnología,Monitor,Asesor 04,4,750000,0,3000000
+V-0032,2025-01-11,Pacífica,Distribuidor,Deportes,Bicicleta estática,Asesor 03,2,1250000,0,2500000
+V-0118,2025-01-11,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 07,9,210000,0,1890000
+V-0284,2025-01-12,Caribe,En línea,Tecnología,Teclado,Asesor 04,16,120000,0,1920000
+V-0466,2025-01-12,Orinoquía,En línea,Hogar,Licuadora,Asesor 02,17,260000,10,3978000
+V-0086,2025-01-13,Andina,En línea,Tecnología,Audífonos,Asesor 02,10,210000,5,1995000
+V-0168,2025-01-13,Caribe,Tienda física,Tecnología,Portátil,Asesor 08,2,2800000,0,5600000
+V-0295,2025-01-13,Andina,En línea,Deportes,Mancuernas,Asesor 08,1,140000,15,119000
+V-0574,2025-01-13,Andina,Distribuidor,Papelería,Kit de esferos,Asesor 08,2,15000,0,30000
+V-0594,2025-01-13,Andina,Tienda física,Tecnología,Portátil,Asesor 02,3,2800000,0,8400000
+V-0178,2025-01-14,Andina,Distribuidor,Deportes,Bicicleta estática,Asesor 06,9,1250000,0,11250000
+V-0165,2025-01-15,Pacífica,En línea,Hogar,Licuadora,Asesor 06,7,260000,0,1820000
+V-0187,2025-01-15,Andina,Tienda física,Hogar,Cafetera,Asesor 04,18,340000,15,5202000
+V-0209,2025-01-15,Andina,En línea,Tecnología,Audífonos,Asesor 05,18,210000,0,3780000
+V-0351,2025-01-16,Orinoquía,Distribuidor,Deportes,Mancuernas,Asesor 06,13,140000,0,1820000
+V-0441,2025-01-16,Andina,Tienda física,Hogar,Cafetera,Asesor 03,13,340000,0,4420000
+V-0139,2025-01-17,Andina,Tienda física,Tecnología,Teclado,Asesor 02,5,120000,0,600000
+V-0231,2025-01-17,Andina,Tienda física,Hogar,Aspiradora,Asesor 02,10,520000,0,5200000
+V-0233,2025-01-18,Andina,En línea,Deportes,Balón,Asesor 08,8,85000,5,646000
+V-0500,2025-01-18,Pacífica,Distribuidor,Hogar,Aspiradora,Asesor 01,19,520000,0,9880000
+V-0562,2025-01-18,Pacífica,En línea,Hogar,Licuadora,Asesor 03,4,260000,5,988000
+V-0640,2025-01-19,Andina,En línea,Tecnología,Audífonos,Asesor 04,11,210000,0,2310000
+V-0492,2025-01-20,Caribe,Distribuidor,Tecnología,Portátil,Asesor 02,1,2800000,0,2800000
+V-0007,2025-01-21,Andina,En línea,Tecnología,Portátil,Asesor 05,14,2800000,0,39200000
+V-0194,2025-01-21,Caribe,Tienda física,Hogar,Licuadora,Asesor 07,14,260000,5,3458000
+V-0276,2025-01-21,Orinoquía,Tienda física,Papelería,Agenda,Asesor 06,1,38000,0,38000
+V-0538,2025-01-21,Andina,En línea,Deportes,Mancuernas,Asesor 07,19,140000,0,2660000
+V-0556,2025-01-21,Orinoquía,Tienda física,Tecnología,Audífonos,Asesor 01,14,210000,5,2793000
+V-0541,2025-01-22,Andina,Distribuidor,Tecnología,Monitor,Asesor 08,16,750000,0,12000000
+V-0405,2025-01-23,Amazonía,En línea,Papelería,Agenda,Asesor 06,12,38000,5,433200
+V-0614,2025-01-23,Andina,Distribuidor,Tecnología,Audífonos,Asesor 03,1,210000,0,210000
+V-0489,2025-01-26,Andina,Tienda física,Tecnología,Monitor,Asesor 01,8,750000,0,6000000
+V-0229,2025-01-27,Pacífica,Distribuidor,Papelería,Resma de papel,Asesor 05,6,22000,0,132000
+V-0419,2025-01-27,Andina,En línea,Tecnología,Audífonos,Asesor 08,4,210000,0,840000
+V-0195,2025-01-28,Andina,Tienda física,Tecnología,Audífonos,Asesor 08,16,210000,10,3024000
+V-0437,2025-01-28,Andina,Tienda física,Tecnología,Audífonos,Asesor 06,8,210000,0,1680000
+V-0535,2025-01-28,Caribe,Distribuidor,Tecnología,Monitor,Asesor 08,11,750000,0,8250000
+V-0158,2025-01-29,Andina,Tienda física,Hogar,Licuadora,Asesor 06,4,260000,15,884000
+V-0315,2025-01-29,Caribe,Tienda física,Hogar,Aspiradora,Asesor 01,19,520000,10,8892000
+V-0590,2025-01-29,Pacífica,Distribuidor,Deportes,Balón,Asesor 05,4,85000,0,340000
+V-0155,2025-01-30,Caribe,Tienda física,Deportes,Mancuernas,Asesor 08,9,140000,5,1197000
+V-0505,2025-01-30,Caribe,Tienda física,Hogar,Cafetera,Asesor 03,3,340000,15,867000
+V-0256,2025-01-31,Andina,En línea,Tecnología,Monitor,Asesor 03,12,750000,5,8550000
+V-0071,2025-02-01,Andina,Tienda física,Tecnología,Monitor,Asesor 08,5,750000,10,3375000
+V-0289,2025-02-01,Caribe,Tienda física,Papelería,Resma de papel,Asesor 01,18,22000,0,396000
+V-0249,2025-02-02,Pacífica,Distribuidor,Papelería,Resma de papel,Asesor 02,11,22000,0,242000
+V-0617,2025-02-02,Pacífica,Tienda física,Deportes,Bicicleta estática,Asesor 08,4,1250000,10,4500000
+V-0248,2025-02-03,Andina,Distribuidor,Deportes,Mancuernas,Asesor 03,16,140000,0,2240000
+V-0504,2025-02-03,Andina,Tienda física,Deportes,Balón,Asesor 03,5,85000,10,382500
+V-0555,2025-02-03,Caribe,Tienda física,Tecnología,Teclado,Asesor 01,15,120000,5,1710000
+V-0162,2025-02-04,Pacífica,Distribuidor,Hogar,Licuadora,Asesor 07,19,260000,15,4199000
+V-0205,2025-02-04,Andina,En línea,Hogar,Aspiradora,Asesor 06,4,520000,10,1872000
+V-0557,2025-02-04,Andina,En línea,Hogar,Licuadora,Asesor 04,10,260000,15,2210000
+V-0146,2025-02-05,Caribe,Tienda física,Deportes,Balón,Asesor 07,10,85000,10,765000
+V-0006,2025-02-06,Caribe,,Papelería,Agenda,Asesor 01,16,38000,0,608000
+V-0159,2025-02-06,Caribe,Tienda física,Hogar,Cafetera,Asesor 05,19,340000,15,5491000
+V-0177,2025-02-07,Pacífica,Distribuidor,Hogar,Cafetera,Asesor 02,10,340000,0,3400000
+V-0208,2025-02-08,Pacífica,Tienda física,Deportes,Bicicleta estática,Asesor 06,14,1250000,15,14875000
+V-0396,2025-02-10,Andina,En línea,Deportes,Balón,Asesor 03,4,85000,5,323000
+V-0450,2025-02-10,Andina,Distribuidor,Deportes,Bicicleta estática,Asesor 02,1,1250000,0,1250000
+V-0436,2025-02-12,Pacífica,En línea,Hogar,Licuadora,Asesor 04,9,260000,5,2223000
+V-0625,2025-02-13,Orinoquía,Distribuidor,Tecnología,Teclado,Asesor 01,11,120000,0,1320000
+V-0109,2025-02-14,Orinoquía,Tienda física,Papelería,Resma de papel,Asesor 03,5,22000,0,110000
+V-0161,2025-02-14,Andina,Distribuidor,Hogar,Cafetera,Asesor 05,9,340000,0,3060000
+V-0455,2025-02-14,Caribe,Tienda física,Deportes,Mancuernas,Asesor 08,14,140000,0,1960000
+V-0279,2025-02-18,Pacífica,En línea,Tecnología,Teclado,Asesor 06,9,120000,0,1080000
+V-0427,2025-02-18,Pacífica,Distribuidor,Hogar,Aspiradora,Asesor 08,12,520000,0,6240000
+V-0609,2025-02-18,Andina,En línea,Tecnología,Audífonos,Asesor 05,2,210000,0,420000
+V-0626,2025-02-18,Orinoquía,En línea,Hogar,Cafetera,Asesor 08,2,340000,15,578000
+V-0474,2025-02-20,Amazonía,En línea,Tecnología,Portátil,Asesor 05,18,2800000,0,50400000
+V-0633,2025-02-20,Caribe,En línea,Papelería,Agenda,Asesor 06,3,38000,0,114000
+V-0119,2025-02-21,Caribe,En línea,Papelería,Kit de esferos,Asesor 01,14,15000,5,199500
+V-0361,2025-02-21,Pacífica,En línea,Tecnología,Portátil,Asesor 01,13,2800000,10,32760000
+V-0285,2025-02-22,Caribe,Distribuidor,Tecnología,Teclado,Asesor 02,4,120000,0,480000
+V-0219,2025-02-23,Andina,En línea,Papelería,Resma de papel,Asesor 07,13,22000,0,286000
+V-0414,2025-02-23,Caribe,Tienda física,Hogar,Cafetera,Asesor 03,16,340000,10,4896000
+V-0586,2025-02-24,Andina,En línea,Tecnología,Audífonos,Asesor 06,7,210000,10,1323000
+V-0490,2025-02-25,Andina,En línea,Tecnología,Audífonos,Asesor 01,14,210000,10,2646000
+V-0539,2025-02-25,Caribe,Tienda física,Hogar,Cafetera,Asesor 06,4,340000,5,1292000
+V-0524,2025-02-26,Caribe,Tienda física,Papelería,Resma de papel,Asesor 04,1,22000,10,19800
+V-0566,2025-02-26,Andina,Tienda física,Hogar,Cafetera,Asesor 04,5,340000,5,1615000
+V-0393,2025-02-27,Andina,En línea,Hogar,Cafetera,Asesor 05,3,340000,0,1020000
+V-0533,2025-02-28,Pacífica,En línea,Tecnología,Audífonos,Asesor 02,14,210000,5,2793000
+V-0355,2025-03-01,Andina,Tienda física,Papelería,Kit de esferos,Asesor 01,2,15000,0,30000
+V-0584,2025-03-01,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 08,19,210000,10,3591000
+V-0635,2025-03-01,Orinoquía,En línea,Tecnología,Audífonos,Asesor 06,16,210000,0,3360000
+V-0100,2025-03-02,Pacífica,Tienda física,Papelería,Resma de papel,Asesor 04,10,22000,10,198000
+V-0198,2025-03-02,Andina,Distribuidor,Hogar,Licuadora,Asesor 03,15,260000,10,3510000
+V-0429,2025-03-02,Pacífica,En línea,Hogar,Aspiradora,Asesor 02,8,520000,0,4160000
+V-0114,2025-03-03,Caribe,Tienda física,Deportes,Mancuernas,Asesor 01,1,140000,0,140000
+V-0498,2025-03-03,Andina,En línea,Hogar,Licuadora,Asesor 07,1,260000,5,247000
+V-0342,2025-03-04,Caribe,Tienda física,Papelería,Agenda,Asesor 02,8,38000,0,304000
+V-0578,2025-03-04,Andina,Distribuidor,Papelería,Resma de papel,Asesor 01,12,22000,0,264000
+V-0260,2025-03-05,Pacífica,Tienda física,Deportes,Bicicleta estática,Asesor 02,12,1250000,0,15000000
+V-0375,2025-03-05,Caribe,En línea,Hogar,Licuadora,Asesor 05,13,260000,0,3380000
+V-0469,2025-03-06,Andina,Tienda física,Tecnología,Audífonos,Asesor 03,2,210000,0,420000
+V-0509,2025-03-06,Andina,Distribuidor,Tecnología,Portátil,Asesor 08,11,2800000,15,26180000
+V-0583,2025-03-06,Andina,Distribuidor,Hogar,Aspiradora,Asesor 04,9,520000,10,4212000
+V-0250,2025-03-07,Andina,En línea,Papelería,Resma de papel,Asesor 01,20,22000,5,418000
+V-0126,2025-03-08,Andina,Tienda física,Hogar,Licuadora,Asesor 03,13,260000,0,3380000
+V-0415,2025-03-09,Caribe,En línea,Papelería,Resma de papel,Asesor 01,9,22000,5,188100
+V-0503,2025-03-09,Orinoquía,Tienda física,Deportes,Mancuernas,Asesor 08,17,140000,15,2023000
+V-0037,2025-03-10,Amazonía,Tienda física,Hogar,Cafetera,Asesor 05,2,340000,10,612000
+V-0092,2025-03-10,Andina,Tienda física,Hogar,Licuadora,Asesor 03,10,260000,0,2600000
+V-0148,2025-03-11,Caribe,En línea,Hogar,Aspiradora,Asesor 03,19,520000,15,8398000
+V-0438,2025-03-11,Andina,Tienda física,Deportes,Mancuernas,Asesor 06,1,140000,0,140000
+V-0012,2025-03-12,Andina,Tienda física,Hogar,Cafetera,Asesor 06,19,340000,15,5491000
+V-0062,2025-03-12,Pacífica,Tienda física,Deportes,Balón,Asesor 03,17,85000,0,1445000
+V-0101,2025-03-12,Pacífica,Distribuidor,Tecnología,Audífonos,Asesor 03,7,210000,0,1470000
+V-0186,2025-03-12,Andina,Tienda física,Tecnología,Monitor,Asesor 04,17,750000,0,12750000
+V-0074,2025-03-13,Orinoquía,Tienda física,Tecnología,Audífonos,Asesor 06,19,210000,0,3990000
+V-0399,2025-03-13,Andina,Tienda física,Tecnología,Audífonos,Asesor 06,8,210000,5,1596000
+V-0228,2025-03-15,Caribe,Tienda física,Tecnología,Teclado,Asesor 03,11,120000,10,1188000
+V-0015,2025-03-16,Andina,Tienda física,Deportes,Mancuernas,Asesor 02,19,140000,5,2527000
+V-0462,2025-03-16,Caribe,Tienda física,Papelería,Kit de esferos,Asesor 07,18,15000,0,270000
+V-0619,2025-03-16,Andina,Distribuidor,Papelería,Resma de papel,Asesor 06,12,22000,10,237600
+V-0565,2025-03-17,Andina,Tienda física,Tecnología,Teclado,Asesor 04,10,120000,0,1200000
+V-0027,2025-03-19,Caribe,En línea,Deportes,Mancuernas,Asesor 04,10,140000,5,1330000
+V-0173,2025-03-19,Orinoquía,En línea,Tecnología,Audífonos,Asesor 02,7,210000,0,1470000
+V-0459,2025-03-19,Andina,En línea,Papelería,Resma de papel,Asesor 02,17,22000,10,336600
+V-0266,2025-03-20,Pacífica,Tienda física,Hogar,Aspiradora,Asesor 01,20,520000,5,9880000
+V-0359,2025-03-20,Pacífica,En línea,Papelería,Kit de esferos,Asesor 07,20,15000,0,300000
+V-0067,2025-03-21,Pacífica,Tienda física,Deportes,Mancuernas,Asesor 05,1,140000,15,119000
+V-0439,2025-03-21,Andina,Tienda física,Tecnología,Monitor,Asesor 07,5,750000,0,3750000
+V-0483,2025-03-21,Andina,En línea,Hogar,Aspiradora,Asesor 05,12,520000,0,6240000
+V-0499,2025-03-22,Caribe,Tienda física,Papelería,Resma de papel,Asesor 06,12,22000,0,264000
+V-0090,2025-03-24,Caribe,Distribuidor,Hogar,Aspiradora,Asesor 04,16,520000,0,8320000
+V-0330,2025-03-24,Caribe,En línea,Tecnología,Audífonos,Asesor 03,12,210000,5,2394000
+V-0005,2025-03-25,Caribe,En línea,Tecnología,Portátil,Asesor 06,6,2800000,10,15120000
+V-0055,2025-03-25,Andina,Tienda física,Tecnología,Portátil,Asesor 07,14,2800000,10,35280000
+V-0156,2025-03-26,Andina,En línea,Tecnología,Portátil,Asesor 07,13,2800000,10,32760000
+V-0261,2025-03-26,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 04,15,120000,0,1800000
+V-0344,2025-03-27,Amazonía,Distribuidor,Papelería,Kit de esferos,Asesor 03,7,15000,15,89250
+V-0542,2025-03-27,Pacífica,Tienda física,Deportes,Bicicleta estática,Asesor 04,2,1250000,0,2500000
+V-0072,2025-03-29,Caribe,En línea,Tecnología,Audífonos,Asesor 03,16,210000,5,3192000
+V-0207,2025-03-29,Pacífica,Tienda física,Deportes,Balón,Asesor 01,2,85000,5,161500
+V-0390,2025-03-29,Andina,Tienda física,Tecnología,Portátil,Asesor 08,3,2800000,0,8400000
+V-0417,2025-04-01,Pacífica,Tienda física,Hogar,Aspiradora,Asesor 03,18,520000,0,9360000
+V-0605,2025-04-01,Orinoquía,En línea,Tecnología,Audífonos,Asesor 01,18,210000,15,3213000
+V-0630,2025-04-01,Pacífica,En línea,Papelería,Agenda,Asesor 04,1,38000,0,38000
+V-0371,2025-04-02,Andina,Tienda física,Papelería,Agenda,Asesor 08,21,38000,10,718200
+V-0136,2025-04-03,Orinoquía,Distribuidor,Hogar,Licuadora,Asesor 07,14,260000,0,3640000
+V-0263,2025-04-03,Andina,En línea,Hogar,Licuadora,Asesor 02,17,260000,0,4420000
+V-0408,2025-04-04,Amazonía,En línea,Deportes,Balón,Asesor 04,6,85000,10,459000
+V-0447,2025-04-04,Andina,En línea,Tecnología,Audífonos,Asesor 08,6,210000,0,1260000
+V-0519,2025-04-05,Andina,Tienda física,Tecnología,Audífonos,Asesor 03,13,210000,10,2457000
+V-0421,2025-04-06,Andina,Distribuidor,Hogar,Licuadora,Asesor 06,3,260000,5,741000
+V-0099,2025-04-07,Caribe,Tienda física,Papelería,Agenda,Asesor 06,3,38000,15,96900
+V-0406,2025-04-09,Caribe,Tienda física,Papelería,Agenda,Asesor 06,12,38000,5,433200
+V-0164,2025-04-10,Pacífica,En línea,Hogar,Licuadora,Asesor 07,1,260000,5,247000
+V-0252,2025-04-10,Andina,Tienda física,Deportes,Balón,Asesor 03,7,85000,0,595000
+V-0298,2025-04-10,Caribe,En línea,Deportes,Mancuernas,Asesor 03,8,140000,5,1064000
+V-0624,2025-04-10,Andina,Tienda física,Tecnología,Teclado,Asesor 08,9,120000,10,972000
+V-0059,2025-04-11,Pacífica,En línea,Papelería,Kit de esferos,Asesor 04,1,15000,0,15000
+V-0028,2025-04-12,Pacífica,Distribuidor,Papelería,Agenda,Asesor 08,2,38000,0,76000
+V-0003,2025-04-13,Pacífica,En línea,Papelería,Resma de papel,Asesor 05,18,22000,5,376200
+V-0116,2025-04-13,Pacífica,Tienda física,Tecnología,Portátil,Asesor 05,1,2800000,10,2520000
+V-0200,2025-04-14,Orinoquía,,Deportes,Balón,Asesor 06,11,85000,5,888250
+V-0401,2025-04-14,Caribe,En línea,Deportes,Bicicleta estática,Asesor 02,2,1250000,0,2500000
+V-0608,2025-04-14,Andina,Tienda física,Tecnología,Portátil,Asesor 01,20,2800000,0,56000000
+V-0332,2025-04-15,Andina,En línea,Papelería,Resma de papel,Asesor 05,21,22000,15,392700
+V-0035,2025-04-16,Orinoquía,Distribuidor,Tecnología,Portátil,Asesor 01,7,2800000,0,19600000
+V-0123,2025-04-17,Andina,Distribuidor,Tecnología,Teclado,Asesor 05,4,120000,0,480000
+V-0572,2025-04-17,Caribe,Distribuidor,Deportes,Bicicleta estática,Asesor 01,18,1250000,5,21375000
+V-0325,2025-04-18,Orinoquía,En línea,Hogar,Licuadora,Asesor 07,9,260000,0,2340000
+V-0480,2025-04-18,Pacífica,En línea,Hogar,Cafetera,Asesor 01,12,340000,5,3876000
+V-0191,2025-04-19,Andina,En línea,Tecnología,Teclado,Asesor 07,15,120000,0,1800000
+V-0281,2025-04-19,Andina,Tienda física,Papelería,Resma de papel,Asesor 08,11,22000,10,217800
+V-0189,2025-04-20,Andina,En línea,Deportes,Mancuernas,Asesor 03,9,140000,0,1260000
+V-0403,2025-04-20,Caribe,Distribuidor,Tecnología,Audífonos,Asesor 03,14,210000,0,2940000
+V-0511,2025-04-20,Andina,Distribuidor,Tecnología,Teclado,Asesor 04,8,120000,10,864000
+V-0570,2025-04-20,Amazonía,Tienda física,Papelería,Kit de esferos,Asesor 07,1,15000,10,13500
+V-0350,2025-04-21,Andina,Tienda física,Tecnología,Teclado,Asesor 03,17,120000,15,1734000
+V-0213,2025-04-22,Pacífica,Tienda física,Hogar,Licuadora,Asesor 08,4,260000,10,936000
+V-0476,2025-04-22,Andina,En línea,Hogar,Cafetera,Asesor 01,11,340000,0,3740000
+V-0154,2025-04-23,Caribe,Distribuidor,Tecnología,Portátil,Asesor 06,20,2800000,5,53200000
+V-0512,2025-04-23,Pacífica,Tienda física,Hogar,Aspiradora,Asesor 07,6,520000,10,2808000
+V-0210,2025-04-24,Pacífica,Distribuidor,Tecnología,Portátil,Asesor 08,21,2800000,10,52920000
+V-0394,2025-04-24,Caribe,,Hogar,Licuadora,Asesor 01,20,260000,5,4940000
+V-0022,2025-04-25,Pacífica,Tienda física,Hogar,Licuadora,Asesor 06,8,260000,0,2080000
+V-0124,2025-04-25,Andina,Tienda física,Papelería,Kit de esferos,Asesor 02,2,15000,0,30000
+V-0508,2025-04-25,Orinoquía,En línea,Deportes,Mancuernas,Asesor 04,7,140000,0,980000
+V-0097,2025-04-26,Pacífica,En línea,Tecnología,Audífonos,Asesor 07,7,210000,15,1249500
+V-0176,2025-04-26,Caribe,En línea,Tecnología,Teclado,Asesor 02,18,120000,0,2160000
+V-0335,2025-04-26,Caribe,Tienda física,Tecnología,Audífonos,Asesor 04,1,210000,0,210000
+V-0038,2025-04-27,Andina,En línea,Papelería,Agenda,Asesor 03,11,38000,15,355300
+V-0166,2025-04-27,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 04,17,210000,0,3570000
+V-0397,2025-04-27,Andina,En línea,Tecnología,Portátil,Asesor 03,7,2800000,15,16660000
+V-0133,2025-04-28,Caribe,Tienda física,Papelería,Kit de esferos,Asesor 05,11,15000,5,156750
+V-0273,2025-04-28,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 02,16,1250000,5,19000000
+V-0288,2025-04-28,Andina,Distribuidor,Tecnología,Audífonos,Asesor 05,6,210000,0,1260000
+V-0623,2025-04-28,Andina,En línea,Papelería,Resma de papel,Asesor 06,21,22000,0,462000
+V-0382,2025-04-29,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 06,19,1250000,0,23750000
+V-0600,2025-04-29,Orinoquía,Tienda física,Tecnología,Audífonos,Asesor 07,1,210000,0,210000
+V-0141,2025-04-30,Pacífica,Tienda física,Tecnología,Monitor,Asesor 01,11,750000,0,8250000
+V-0573,2025-04-30,Andina,Distribuidor,Tecnología,Audífonos,Asesor 07,5,210000,0,1050000
+V-0595,2025-05-01,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 05,22,210000,0,4620000
+V-0241,2025-05-03,Andina,En línea,Tecnología,Monitor,Asesor 07,10,750000,0,7500000
+V-0061,2025-05-04,Orinoquía,Distribuidor,Tecnología,Portátil,Asesor 07,2,2800000,5,5320000
+V-0444,2025-05-04,Andina,En línea,Hogar,Aspiradora,Asesor 04,16,520000,0,8320000
+V-0485,2025-05-04,Orinoquía,Distribuidor,Tecnología,Audífonos,Asesor 04,16,210000,5,3192000
+V-0491,2025-05-04,Caribe,,Deportes,Mancuernas,Asesor 01,5,140000,0,700000
+V-0477,2025-05-05,Andina,Tienda física,Tecnología,Monitor,Asesor 01,22,750000,5,15675000
+V-0488,2025-05-05,Pacífica,Tienda física,Tecnología,Teclado,Asesor 06,4,120000,5,456000
+V-0098,2025-05-06,Pacífica,Tienda física,Tecnología,Monitor,Asesor 02,20,750000,0,15000000
+V-0413,2025-05-06,Andina,Tienda física,Tecnología,Teclado,Asesor 03,6,120000,0,720000
+V-0602,2025-05-06,Andina,En línea,Hogar,Licuadora,Asesor 05,19,260000,0,4940000
+V-0073,2025-05-07,Pacífica,Distribuidor,Papelería,Agenda,Asesor 01,22,38000,0,836000
+V-0497,2025-05-07,Andina,Tienda física,Tecnología,Portátil,Asesor 04,16,2800000,10,40320000
+V-0216,2025-05-08,Andina,Tienda física,Tecnología,Teclado,Asesor 02,2,120000,0,240000
+V-0567,2025-05-08,Caribe,En línea,Tecnología,Teclado,Asesor 03,21,120000,0,2520000
+V-0306,2025-05-09,Andina,En línea,Hogar,Cafetera,Asesor 03,2,340000,5,646000
+V-0354,2025-05-10,Andina,En línea,Papelería,Resma de papel,Asesor 05,18,22000,0,396000
+V-0268,2025-05-11,Andina,En línea,Tecnología,Teclado,Asesor 05,19,120000,0,2280000
+V-0554,2025-05-12,Andina,Distribuidor,Hogar,Aspiradora,Asesor 02,13,520000,0,6760000
+V-0372,2025-05-13,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 05,12,120000,5,1368000
+V-0424,2025-05-13,Caribe,Tienda física,Deportes,Balón,Asesor 03,12,85000,0,1020000
+V-0501,2025-05-13,Andina,Tienda física,Tecnología,Teclado,Asesor 08,11,120000,15,1122000
+V-0329,2025-05-14,Caribe,En línea,Papelería,Kit de esferos,Asesor 02,2,15000,10,27000
+V-0523,2025-05-14,Pacífica,En línea,Hogar,Licuadora,Asesor 01,15,260000,5,3705000
+V-0358,2025-05-15,Caribe,Distribuidor,Hogar,Licuadora,Asesor 02,17,260000,15,3757000
+V-0470,2025-05-15,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 07,17,210000,10,3213000
+V-0152,2025-05-17,Orinoquía,Distribuidor,Tecnología,Audífonos,Asesor 07,18,210000,10,3402000
+V-0347,2025-05-17,Andina,Distribuidor,Tecnología,Audífonos,Asesor 05,9,210000,0,1890000
+V-0549,2025-05-17,Pacífica,En línea,Tecnología,Audífonos,Asesor 06,4,210000,10,756000
+V-0047,2025-05-19,Andina,Tienda física,Hogar,Aspiradora,Asesor 01,16,520000,10,7488000
+V-0388,2025-05-19,Caribe,Distribuidor,Hogar,Licuadora,Asesor 05,6,260000,5,1482000
+V-0561,2025-05-19,Andina,Tienda física,Tecnología,Teclado,Asesor 04,10,120000,0,1200000
+V-0075,2025-05-21,Orinoquía,En línea,Deportes,Bicicleta estática,Asesor 06,14,1250000,0,17500000
+V-0376,2025-05-21,Andina,En línea,Hogar,Aspiradora,Asesor 04,17,520000,5,8398000
+V-0579,2025-05-21,Caribe,Distribuidor,Papelería,Agenda,Asesor 04,2,38000,5,72200
+V-0433,2025-05-22,Andina,En línea,Deportes,Balón,Asesor 05,11,85000,0,935000
+V-0475,2025-05-22,Andina,En línea,Deportes,Bicicleta estática,Asesor 01,15,1250000,0,18750000
+V-0545,2025-05-22,Andina,Tienda física,Hogar,Cafetera,Asesor 06,14,340000,10,4284000
+V-0305,2025-05-24,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 07,6,1250000,0,7500000
+V-0095,2025-05-25,Andina,Distribuidor,Tecnología,Teclado,Asesor 02,6,120000,5,684000
+V-0385,2025-05-25,Andina,Tienda física,Hogar,Aspiradora,Asesor 08,9,520000,0,4680000
+V-0293,2025-05-26,Andina,En línea,Papelería,Kit de esferos,Asesor 07,6,15000,0,90000
+V-0030,2025-05-27,Caribe,En línea,Papelería,Resma de papel,Asesor 07,14,22000,10,277200
+V-0615,2025-05-27,Andina,Tienda física,Papelería,Agenda,Asesor 03,10,38000,10,342000
+V-0434,2025-05-28,Pacífica,Distribuidor,Hogar,Cafetera,Asesor 05,20,340000,0,6800000
+V-0588,2025-05-28,Andina,,Hogar,Aspiradora,Asesor 02,22,520000,0,11440000
+V-0286,2025-05-29,Caribe,Distribuidor,Tecnología,Monitor,Asesor 07,9,750000,0,6750000
+V-0343,2025-05-29,Andina,Tienda física,Hogar,Cafetera,Asesor 04,22,340000,10,6732000
+V-0113,2025-05-30,Andina,En línea,Papelería,Agenda,Asesor 01,1,38000,0,38000
+V-0147,2025-05-31,Caribe,En línea,Hogar,Cafetera,Asesor 06,19,340000,10,5814000
+V-0160,2025-06-01,Caribe,Distribuidor,Papelería,Resma de papel,Asesor 06,12,22000,0,264000
+V-0428,2025-06-01,Andina,En línea,Tecnología,Monitor,Asesor 08,21,750000,5,14962500
+V-0196,2025-06-02,Caribe,En línea,Tecnología,Teclado,Asesor 05,11,120000,15,1122000
+V-0127,2025-06-03,Andina,Tienda física,Papelería,Kit de esferos,Asesor 01,9,15000,0,135000
+V-0334,2025-06-04,Pacífica,Tienda física,Papelería,Resma de papel,Asesor 02,13,22000,0,286000
+V-0218,2025-06-05,Andina,Tienda física,Papelería,Kit de esferos,Asesor 01,21,15000,0,315000
+V-0078,2025-06-06,Caribe,En línea,Papelería,Kit de esferos,Asesor 01,10,15000,15,127500
+V-0129,2025-06-06,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 04,13,1250000,0,16250000
+V-0468,2025-06-06,Caribe,Tienda física,Hogar,Licuadora,Asesor 08,4,260000,0,1040000
+V-0638,2025-06-06,Caribe,Distribuidor,Deportes,Bicicleta estática,Asesor 02,3,1250000,10,3375000
+V-0128,2025-06-08,Pacífica,Distribuidor,Tecnología,Monitor,Asesor 04,20,750000,0,15000000
+V-0418,2025-06-08,Andina,En línea,Tecnología,Audífonos,Asesor 04,15,210000,0,3150000
+V-0440,2025-06-08,Andina,En línea,Tecnología,Monitor,Asesor 02,20,750000,0,15000000
+V-0323,2025-06-09,Andina,Tienda física,Tecnología,Portátil,Asesor 08,19,2800000,0,53200000
+V-0242,2025-06-10,Pacífica,Distribuidor,Tecnología,Portátil,Asesor 05,16,2800000,0,44800000
+V-0069,2025-06-11,Andina,Distribuidor,Papelería,Resma de papel,Asesor 04,16,22000,0,352000
+V-0245,2025-06-11,Andina,Distribuidor,Hogar,Licuadora,Asesor 07,19,260000,5,4693000
+V-0181,2025-06-13,Caribe,En línea,Papelería,Resma de papel,Asesor 06,9,22000,0,198000
+V-0569,2025-06-13,Orinoquía,En línea,Tecnología,Monitor,Asesor 02,3,750000,0,2250000
+V-0634,2025-06-13,Andina,Tienda física,Hogar,Aspiradora,Asesor 07,20,520000,0,10400000
+V-0269,2025-06-15,Caribe,Tienda física,Deportes,Mancuernas,Asesor 06,1,140000,10,126000
+V-0620,2025-06-15,Andina,Distribuidor,Hogar,Aspiradora,Asesor 04,17,520000,5,8398000
+V-0045,2025-06-16,Orinoquía,En línea,Tecnología,Audífonos,Asesor 01,23,210000,10,4347000
+V-0135,2025-06-17,Andina,Tienda física,Hogar,Aspiradora,Asesor 05,18,520000,5,8892000
+V-0157,2025-06-17,Andina,En línea,Papelería,Resma de papel,Asesor 08,19,22000,0,418000
+V-0247,2025-06-17,Andina,En línea,Papelería,Agenda,Asesor 06,17,38000,5,613700
+V-0222,2025-06-18,Andina,En línea,Tecnología,Monitor,Asesor 02,3,750000,5,2137500
+V-0277,2025-06-18,Andina,En línea,Hogar,Cafetera,Asesor 04,8,340000,0,2720000
+V-0402,2025-06-19,Orinoquía,Distribuidor,Papelería,Kit de esferos,Asesor 08,1,15000,10,13500
+V-0224,2025-06-20,Andina,Distribuidor,Tecnología,Portátil,Asesor 06,9,2800000,0,25200000
+V-0130,2025-06-21,Caribe,Tienda física,Tecnología,Audífonos,Asesor 07,10,210000,0,2100000
+V-0291,2025-06-21,Caribe,Tienda física,Deportes,Balón,Asesor 08,1,85000,5,80750
+V-0621,2025-06-22,Andina,Tienda física,Hogar,Cafetera,Asesor 06,19,340000,0,6460000
+V-0272,2025-06-24,Andina,Tienda física,Hogar,Licuadora,Asesor 03,21,260000,0,5460000
+V-0297,2025-06-25,Orinoquía,,Hogar,Cafetera,Asesor 02,22,340000,0,7480000
+V-0353,2025-06-25,Andina,En línea,Deportes,Balón,Asesor 03,15,85000,10,1147500
+V-0202,2025-06-26,Andina,En línea,Tecnología,Monitor,Asesor 07,12,750000,10,8100000
+V-0449,2025-06-26,Caribe,En línea,Deportes,Bicicleta estática,Asesor 03,17,1250000,5,20187500
+V-0085,2025-06-27,Pacífica,En línea,Tecnología,Portátil,Asesor 01,18,2800000,0,50400000
+V-0220,2025-06-27,Andina,Tienda física,Tecnología,Monitor,Asesor 08,3,750000,5,2137500
+V-0301,2025-06-27,Pacífica,En línea,Papelería,Resma de papel,Asesor 04,1,22000,10,19800
+V-0024,2025-06-28,Caribe,Distribuidor,Tecnología,Portátil,Asesor 08,18,2800000,5,47880000
+V-0091,2025-06-28,Caribe,Tienda física,Hogar,Licuadora,Asesor 07,16,260000,5,3952000
+V-0239,2025-06-28,Orinoquía,Distribuidor,Papelería,Kit de esferos,Asesor 04,12,15000,0,180000
+V-0267,2025-07-01,Orinoquía,Distribuidor,Deportes,Balón,Asesor 03,12,85000,0,1020000
+V-0460,2025-07-01,Caribe,Tienda física,Hogar,Licuadora,Asesor 02,13,260000,5,3211000
+V-0043,2025-07-02,Andina,Distribuidor,Hogar,Licuadora,Asesor 08,23,260000,5,5681000
+V-0079,2025-07-02,Andina,En línea,Papelería,Resma de papel,Asesor 06,5,22000,5,104500
+V-0456,2025-07-02,Caribe,En línea,Hogar,Cafetera,Asesor 06,8,340000,0,2720000
+V-0274,2025-07-03,Andina,Distribuidor,Papelería,Agenda,Asesor 05,21,38000,0,798000
+V-0356,2025-07-03,Caribe,En línea,Tecnología,Audífonos,Asesor 02,21,210000,0,4410000
+V-0389,2025-07-03,Orinoquía,Distribuidor,Tecnología,Portátil,Asesor 06,13,2800000,5,34580000
+V-0081,2025-07-05,Andina,En línea,Hogar,Aspiradora,Asesor 06,21,520000,0,10920000
+V-0313,2025-07-05,Caribe,Distribuidor,Tecnología,Monitor,Asesor 03,16,750000,0,12000000
+V-0431,2025-07-05,Orinoquía,Tienda física,Papelería,Agenda,Asesor 04,23,38000,5,830300
+V-0087,2025-07-06,Pacífica,En línea,Tecnología,Audífonos,Asesor 07,13,210000,10,2457000
+V-0122,2025-07-06,Andina,Tienda física,Tecnología,Audífonos,Asesor 06,12,210000,5,2394000
+V-0287,2025-07-06,Pacífica,En línea,Hogar,Aspiradora,Asesor 05,1,520000,0,520000
+V-0381,2025-07-07,Pacífica,En línea,Hogar,Cafetera,Asesor 05,21,340000,10,6426000
+V-0029,2025-07-08,Pacífica,En línea,Tecnología,Teclado,Asesor 05,18,120000,10,1944000
+V-0337,2025-07-08,Andina,En línea,Hogar,Aspiradora,Asesor 04,13,520000,5,6422000
+V-0587,2025-07-08,Pacífica,Tienda física,Tecnología,Portátil,Asesor 06,22,2800000,0,61600000
+V-0021,2025-07-09,Andina,Distribuidor,Tecnología,Monitor,Asesor 02,4,750000,0,3000000
+V-0308,2025-07-10,Caribe,Tienda física,Tecnología,Portátil,Asesor 02,1,2800000,5,2660000
+V-0486,2025-07-10,Andina,Tienda física,Hogar,Cafetera,Asesor 04,8,340000,10,2448000
+V-0487,2025-07-10,Pacífica,Distribuidor,Papelería,Resma de papel,Asesor 03,10,22000,0,220000
+V-0077,2025-07-11,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 04,3,1250000,5,3562500
+V-0383,2025-07-11,Pacífica,En línea,Tecnología,Portátil,Asesor 03,21,2800000,5,55860000
+V-0411,2025-07-11,Andina,En línea,Tecnología,Teclado,Asesor 04,17,120000,0,2040000
+V-0083,2025-07-12,Andina,Distribuidor,Deportes,Balón,Asesor 04,12,85000,5,969000
+V-0167,2025-07-13,Pacífica,Tienda física,Tecnología,Monitor,Asesor 05,21,750000,15,13387500
+V-0254,2025-07-13,Pacífica,En línea,Tecnología,Portátil,Asesor 08,8,2800000,10,20160000
+V-0564,2025-07-13,Pacífica,Distribuidor,Deportes,Mancuernas,Asesor 01,21,140000,10,2646000
+V-0225,2025-07-14,Andina,Tienda física,Tecnología,Monitor,Asesor 05,11,750000,5,7837500
+V-0019,2025-07-15,Andina,Tienda física,Hogar,Cafetera,Asesor 04,1,340000,10,306000
+V-0420,2025-07-15,Pacífica,Tienda física,Tecnología,Portátil,Asesor 04,16,2800000,10,40320000
+V-0598,2025-07-15,Andina,En línea,Deportes,Bicicleta estática,Asesor 07,22,1250000,10,24750000
+V-0636,2025-07-16,Andina,Distribuidor,Hogar,Licuadora,Asesor 07,17,260000,10,3978000
+V-0064,2025-07-19,Pacífica,En línea,Tecnología,Portátil,Asesor 08,20,2800000,5,53200000
+V-0004,2025-07-20,Andina,En línea,Hogar,Aspiradora,Asesor 01,21,520000,0,10920000
+V-0530,2025-07-20,Pacífica,Tienda física,Tecnología,Teclado,Asesor 05,9,120000,5,1026000
+V-0031,2025-07-21,Orinoquía,Tienda física,Hogar,Aspiradora,Asesor 01,17,520000,5,8398000
+V-0451,2025-07-22,Andina,En línea,Tecnología,Teclado,Asesor 05,12,120000,10,1296000
+V-0387,2025-07-23,Caribe,En línea,Tecnología,Audífonos,Asesor 01,20,210000,5,3990000
+V-0348,2025-07-24,Pacífica,Tienda física,Deportes,Mancuernas,Asesor 01,13,140000,0,1820000
+V-0467,2025-07-24,Caribe,En línea,Hogar,Licuadora,Asesor 01,24,260000,0,6240000
+V-0377,2025-07-25,Caribe,En línea,Tecnología,Teclado,Asesor 02,8,120000,5,912000
+V-0296,2025-07-26,Caribe,Tienda física,Tecnología,Portátil,Asesor 06,15,2800000,0,42000000
+V-0445,2025-07-26,Caribe,En línea,Tecnología,Teclado,Asesor 06,12,120000,5,1368000
+V-0046,2025-07-27,Andina,Distribuidor,Deportes,Balón,Asesor 04,11,85000,0,935000
+V-0251,2025-07-27,Andina,Tienda física,Hogar,Licuadora,Asesor 07,16,260000,10,3744000
+V-0106,2025-07-28,Andina,Tienda física,Papelería,Kit de esferos,Asesor 07,19,15000,5,270750
+V-0423,2025-07-29,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 02,16,120000,0,1920000
+V-0131,2025-07-30,Andina,Distribuidor,Tecnología,Audífonos,Asesor 06,7,210000,10,1323000
+V-0454,2025-07-30,Amazonía,En línea,Papelería,Resma de papel,Asesor 05,3,22000,0,66000
+V-0514,2025-07-30,Caribe,En línea,Tecnología,Teclado,Asesor 02,19,120000,0,2280000
+V-0526,2025-07-30,Andina,Tienda física,Tecnología,Audífonos,Asesor 06,19,210000,0,3990000
+V-0568,2025-07-30,Andina,Tienda física,Papelería,Resma de papel,Asesor 05,3,22000,5,62700
+V-0618,2025-07-30,Andina,Tienda física,Papelería,Agenda,Asesor 08,15,38000,0,570000
+V-0452,2025-07-31,Andina,Tienda física,Tecnología,Portátil,Asesor 01,1,2800000,0,2800000
+V-0463,2025-08-01,Andina,Tienda física,Deportes,Mancuernas,Asesor 04,18,140000,0,2520000
+V-0163,2025-08-02,Caribe,Tienda física,Papelería,Resma de papel,Asesor 08,14,22000,0,308000
+V-0227,2025-08-02,Caribe,Distribuidor,Papelería,Agenda,Asesor 05,3,38000,0,114000
+V-0290,2025-08-02,Andina,Tienda física,Tecnología,Teclado,Asesor 07,22,120000,10,2376000
+V-0506,2025-08-03,Andina,Tienda física,Papelería,Resma de papel,Asesor 05,11,22000,0,242000
+V-0610,2025-08-03,Caribe,Tienda física,Papelería,Resma de papel,Asesor 02,18,22000,5,376200
+V-0057,2025-08-05,Orinoquía,Tienda física,Hogar,Cafetera,Asesor 02,19,340000,5,6137000
+V-0175,2025-08-05,Andina,En línea,Tecnología,Teclado,Asesor 08,14,120000,5,1596000
+V-0203,2025-08-05,Pacífica,Tienda física,Papelería,Resma de papel,Asesor 01,18,22000,0,396000
+V-0378,2025-08-05,Pacífica,Distribuidor,Tecnología,Audífonos,Asesor 03,14,210000,0,2940000
+V-0422,2025-08-05,Andina,Tienda física,Papelería,Kit de esferos,Asesor 04,24,15000,5,342000
+V-0531,2025-08-05,Caribe,En línea,Deportes,Mancuernas,Asesor 03,8,140000,0,1120000
+V-0339,2025-08-06,Andina,Distribuidor,Tecnología,Monitor,Asesor 08,11,750000,10,7425000
+V-0407,2025-08-06,Andina,En línea,Tecnología,Teclado,Asesor 04,18,120000,0,2160000
+V-0432,2025-08-07,Andina,En línea,Tecnología,Teclado,Asesor 01,24,120000,0,2880000
+V-0240,2025-08-09,Caribe,En línea,Hogar,Aspiradora,Asesor 02,8,520000,5,3952000
+V-0581,2025-08-09,Caribe,En línea,Tecnología,Monitor,Asesor 04,14,750000,0,10500000
+V-0259,2025-08-10,Andina,En línea,Deportes,Bicicleta estática,Asesor 03,8,1250000,0,10000000
+V-0461,2025-08-11,Orinoquía,En línea,Papelería,Kit de esferos,Asesor 06,12,15000,10,162000
+V-0052,2025-08-14,Caribe,Distribuidor,Hogar,Licuadora,Asesor 04,23,260000,0,5980000
+V-0275,2025-08-15,Orinoquía,En línea,Deportes,Mancuernas,Asesor 04,11,140000,10,1386000
+V-0292,2025-08-15,Andina,Distribuidor,Papelería,Agenda,Asesor 07,4,38000,5,144400
+V-0473,2025-08-15,Caribe,Tienda física,Deportes,Balón,Asesor 02,21,85000,0,1785000
+V-0034,2025-08-17,Andina,En línea,Tecnología,Audífonos,Asesor 06,12,210000,0,2520000
+V-0345,2025-08-17,Andina,Distribuidor,Papelería,Resma de papel,Asesor 06,15,22000,5,313500
+V-0607,2025-08-17,Orinoquía,En línea,Hogar,Licuadora,Asesor 08,18,260000,10,4212000
+V-0611,2025-08-17,Caribe,Tienda física,Hogar,Cafetera,Asesor 06,23,340000,5,7429000
+V-0214,2025-08-18,Caribe,Distribuidor,Papelería,Agenda,Asesor 05,6,38000,15,193800
+V-0384,2025-08-18,Pacífica,Tienda física,Tecnología,Teclado,Asesor 07,14,120000,10,1512000
+V-0410,2025-08-18,Orinoquía,Distribuidor,Hogar,Licuadora,Asesor 01,22,260000,0,5720000
+V-0560,2025-08-18,Pacífica,En línea,Tecnología,Monitor,Asesor 03,7,750000,5,4987500
+V-0280,2025-08-19,Orinoquía,En línea,Tecnología,Teclado,Asesor 06,17,120000,0,2040000
+V-0580,2025-08-19,Andina,Distribuidor,Tecnología,Monitor,Asesor 01,25,750000,5,17812500
+V-0352,2025-08-20,Orinoquía,Tienda física,Deportes,Balón,Asesor 01,7,85000,0,595000
+V-0392,2025-08-20,Amazonía,Distribuidor,Hogar,Cafetera,Asesor 02,7,340000,10,2142000
+V-0529,2025-08-20,Caribe,Distribuidor,Tecnología,Monitor,Asesor 06,17,750000,0,12750000
+V-0518,2025-08-21,Caribe,Tienda física,Papelería,Agenda,Asesor 08,6,38000,0,228000
+V-0048,2025-08-22,Caribe,Tienda física,Tecnología,Audífonos,Asesor 03,25,210000,0,5250000
+V-0328,2025-08-22,Andina,Tienda física,Deportes,Mancuernas,Asesor 06,3,140000,10,378000
+V-0550,2025-08-22,Andina,En línea,Hogar,Licuadora,Asesor 03,1,260000,0,260000
+V-0170,2025-08-24,Pacífica,Tienda física,Hogar,Licuadora,Asesor 01,15,260000,5,3705000
+V-0629,2025-08-24,Pacífica,Tienda física,Tecnología,Portátil,Asesor 01,25,2800000,0,70000000
+V-0631,2025-08-24,Amazonía,En línea,Hogar,Licuadora,Asesor 05,24,260000,0,6240000
+V-0182,2025-08-25,Andina,Tienda física,Hogar,Licuadora,Asesor 07,4,260000,0,1040000
+V-0199,2025-08-25,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 06,10,120000,0,1200000
+V-0303,2025-08-25,Andina,Tienda física,Tecnología,Teclado,Asesor 05,3,120000,0,360000
+V-0412,2025-08-25,Pacífica,Tienda física,Hogar,Aspiradora,Asesor 08,8,520000,5,3952000
+V-0051,2025-08-26,Andina,Distribuidor,Tecnología,Audífonos,Asesor 05,8,210000,0,1680000
+V-0016,2025-08-27,Andina,Distribuidor,Hogar,Licuadora,Asesor 01,13,260000,0,3380000
+V-0453,2025-08-27,Caribe,Distribuidor,Tecnología,Portátil,Asesor 08,13,2800000,10,32760000
+V-0622,2025-08-27,Andina,En línea,Papelería,Resma de papel,Asesor 07,8,22000,0,176000
+V-0520,2025-08-28,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 03,24,1250000,0,30000000
+V-0597,2025-08-28,Andina,Distribuidor,Hogar,Cafetera,Asesor 01,17,340000,15,4913000
+V-0103,2025-08-29,Andina,,Deportes,Bicicleta estática,Asesor 07,20,1250000,5,23750000
+V-0120,2025-08-29,Caribe,Tienda física,Papelería,Agenda,Asesor 07,18,38000,0,684000
+V-0262,2025-08-29,Andina,En línea,Tecnología,Portátil,Asesor 05,4,2800000,0,11200000
+V-0312,2025-08-29,Caribe,Tienda física,Hogar,Cafetera,Asesor 03,13,340000,0,4420000
+V-0380,2025-08-29,Pacífica,En línea,Hogar,Licuadora,Asesor 07,24,260000,5,5928000
+V-0616,2025-08-29,Andina,Distribuidor,Tecnología,Teclado,Asesor 01,3,120000,10,324000
+V-0197,2025-08-30,Andina,Tienda física,Tecnología,Teclado,Asesor 06,18,120000,5,2052000
+V-0010,2025-08-31,Andina,Tienda física,Deportes,Balón,Asesor 02,21,85000,0,1785000
+V-0076,2025-08-31,Andina,Distribuidor,Deportes,Mancuernas,Asesor 05,17,140000,0,2380000
+V-0201,2025-09-01,Caribe,En línea,Tecnología,Portátil,Asesor 08,13,2800000,0,36400000
+V-0255,2025-09-01,Caribe,En línea,Hogar,Cafetera,Asesor 06,10,340000,0,3400000
+V-0367,2025-09-01,Orinoquía,Distribuidor,Tecnología,Audífonos,Asesor 01,24,210000,15,4284000
+V-0391,2025-09-01,Andina,Tienda física,Tecnología,Audífonos,Asesor 02,21,210000,0,4410000
+V-0009,2025-09-02,Caribe,Tienda física,Tecnología,Monitor,Asesor 05,24,750000,0,18000000
+V-0105,2025-09-02,Caribe,En línea,Tecnología,Portátil,Asesor 08,4,2800000,15,9520000
+V-0217,2025-09-02,Caribe,En línea,Hogar,Cafetera,Asesor 05,20,340000,0,6800000
+V-0320,2025-09-02,Caribe,Distribuidor,Hogar,Cafetera,Asesor 07,10,340000,15,2890000
+V-0559,2025-09-02,Pacífica,Distribuidor,Papelería,Resma de papel,Asesor 06,8,22000,0,176000
+V-0108,2025-09-03,Andina,Tienda física,Deportes,Mancuernas,Asesor 05,8,140000,10,1008000
+V-0448,2025-09-03,Caribe,Distribuidor,Tecnología,Portátil,Asesor 01,25,2800000,0,70000000
+V-0528,2025-09-03,Orinoquía,Tienda física,Papelería,Resma de papel,Asesor 05,11,22000,0,242000
+V-0482,2025-09-04,Amazonía,En línea,Tecnología,Portátil,Asesor 03,8,2800000,0,22400000
+V-0360,2025-09-05,Andina,Tienda física,Hogar,Licuadora,Asesor 05,22,260000,5,5434000
+V-0446,2025-09-05,Andina,En línea,Papelería,Resma de papel,Asesor 05,21,22000,0,462000
+V-0612,2025-09-05,Caribe,Distribuidor,Tecnología,Portátil,Asesor 08,8,2800000,0,22400000
+V-0253,2025-09-06,Andina,En línea,Papelería,Agenda,Asesor 04,6,38000,0,228000
+V-0089,2025-09-07,Andina,En línea,Papelería,Agenda,Asesor 02,3,38000,5,108300
+V-0479,2025-09-07,Caribe,Distribuidor,Hogar,Cafetera,Asesor 07,21,340000,10,6426000
+V-0096,2025-09-10,Andina,Distribuidor,Hogar,Cafetera,Asesor 03,3,340000,5,969000
+V-0172,2025-09-12,Caribe,Tienda física,Hogar,Licuadora,Asesor 05,10,260000,0,2600000
+V-0435,2025-09-13,Andina,Tienda física,Tecnología,Portátil,Asesor 01,6,2800000,5,15960000
+V-0319,2025-09-14,Amazonía,En línea,Hogar,Licuadora,Asesor 08,14,260000,0,3640000
+V-0138,2025-09-15,Pacífica,Tienda física,Hogar,Cafetera,Asesor 06,18,340000,0,6120000
+V-0548,2025-09-15,Caribe,Tienda física,Tecnología,Monitor,Asesor 08,26,750000,0,19500000
+V-0585,2025-09-15,Andina,Tienda física,Deportes,Balón,Asesor 04,1,85000,5,80750
+V-0300,2025-09-16,Andina,En línea,Deportes,Mancuernas,Asesor 08,14,140000,5,1862000
+V-0271,2025-09-17,Pacífica,Tienda física,Tecnología,Portátil,Asesor 07,16,2800000,0,44800000
+V-0299,2025-09-18,Pacífica,Distribuidor,Papelería,Kit de esferos,Asesor 04,16,15000,0,240000
+V-0478,2025-09-19,Andina,En línea,Papelería,Resma de papel,Asesor 02,19,22000,10,376200
+V-0132,2025-09-20,Caribe,Tienda física,Papelería,Agenda,Asesor 08,14,38000,0,532000
+V-0395,2025-09-20,Pacífica,En línea,Tecnología,Teclado,Asesor 03,9,120000,0,1080000
+V-0102,2025-09-21,Pacífica,Distribuidor,Tecnología,Teclado,Asesor 07,14,120000,0,1680000
+V-0513,2025-09-21,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 05,11,210000,0,2310000
+V-0604,2025-09-22,Caribe,En línea,Papelería,Resma de papel,Asesor 07,7,22000,5,146300
+V-0149,2025-09-23,Caribe,Tienda física,Tecnología,Portátil,Asesor 08,1,2800000,0,2800000
+V-0206,2025-09-23,Pacífica,En línea,Hogar,Aspiradora,Asesor 04,20,520000,0,10400000
+V-0368,2025-09-23,Caribe,Tienda física,Hogar,Cafetera,Asesor 05,26,340000,0,8840000
+V-0472,2025-09-23,Andina,Distribuidor,Hogar,Licuadora,Asesor 01,26,260000,0,6760000
+V-0527,2025-09-23,Andina,Tienda física,Tecnología,Audífonos,Asesor 05,4,210000,0,840000
+V-0593,2025-09-23,Pacífica,Distribuidor,Hogar,Licuadora,Asesor 02,11,260000,0,2860000
+V-0596,2025-09-23,Andina,Tienda física,Hogar,Cafetera,Asesor 02,13,340000,0,4420000
+V-0627,2025-09-24,Orinoquía,En línea,Tecnología,Monitor,Asesor 04,24,750000,0,18000000
+V-0521,2025-09-25,Andina,Distribuidor,Deportes,Bicicleta estática,Asesor 05,14,1250000,0,17500000
+V-0190,2025-09-26,Andina,En línea,Deportes,Balón,Asesor 06,20,85000,0,1700000
+V-0326,2025-09-26,Caribe,En línea,Deportes,Bicicleta estática,Asesor 04,24,1250000,5,28500000
+V-0426,2025-09-26,Orinoquía,En línea,Papelería,Agenda,Asesor 05,16,38000,0,608000
+V-0457,2025-09-26,Andina,Tienda física,Tecnología,Teclado,Asesor 06,19,120000,5,2166000
+V-0171,2025-09-27,Andina,Tienda física,Tecnología,Audífonos,Asesor 05,4,210000,5,798000
+V-0340,2025-09-27,Caribe,Tienda física,Deportes,Bicicleta estática,Asesor 03,25,1250000,0,31250000
+V-0416,2025-09-27,Caribe,En línea,Tecnología,Portátil,Asesor 01,13,2800000,5,34580000
+V-0226,2025-09-28,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 04,20,120000,0,2400000
+V-0257,2025-09-28,Andina,En línea,Deportes,Balón,Asesor 03,25,85000,0,2125000
+V-0553,2025-09-28,Andina,Distribuidor,Papelería,Kit de esferos,Asesor 08,16,15000,0,240000
+V-0592,2025-09-28,Andina,Tienda física,Hogar,Aspiradora,Asesor 04,10,520000,15,4420000
+V-0496,2025-09-30,Orinoquía,Distribuidor,Hogar,Licuadora,Asesor 01,13,260000,0,3380000
+V-0577,2025-10-01,Orinoquía,Tienda física,Papelería,Agenda,Asesor 08,12,38000,0,456000
+V-0310,2025-10-02,Andina,Tienda física,Hogar,Licuadora,Asesor 02,1,260000,0,260000
+V-0316,2025-10-02,Amazonía,En línea,Papelería,Agenda,Asesor 07,23,38000,0,874000
+V-0632,2025-10-02,Orinoquía,En línea,Deportes,Balón,Asesor 03,13,85000,5,1049750
+V-0601,2025-10-03,Andina,En línea,Hogar,Cafetera,Asesor 06,1,340000,15,289000
+V-0510,2025-10-04,Orinoquía,Distribuidor,Deportes,Balón,Asesor 01,20,85000,0,1700000
+V-0023,2025-10-06,Caribe,En línea,Tecnología,Monitor,Asesor 07,6,750000,0,4500000
+V-0532,2025-10-06,Andina,En línea,Tecnología,Monitor,Asesor 06,20,750000,0,15000000
+V-0142,2025-10-07,Caribe,Tienda física,Tecnología,Monitor,Asesor 03,15,750000,0,11250000
+V-0311,2025-10-08,Andina,Tienda física,Hogar,Aspiradora,Asesor 02,12,520000,0,6240000
+V-0053,2025-10-09,Andina,Tienda física,Papelería,Kit de esferos,Asesor 06,9,15000,10,121500
+V-0270,2025-10-09,Andina,En línea,Hogar,Licuadora,Asesor 01,18,260000,5,4446000
+V-0357,2025-10-09,Orinoquía,Tienda física,Tecnología,Portátil,Asesor 07,23,2800000,0,64400000
+V-0153,2025-10-10,Andina,Distribuidor,Hogar,Cafetera,Asesor 01,4,340000,0,1360000
+V-0493,2025-10-10,Caribe,En línea,Tecnología,Portátil,Asesor 08,3,2800000,5,7980000
+V-0522,2025-10-10,Caribe,Tienda física,Hogar,Licuadora,Asesor 04,16,260000,0,4160000
+V-0563,2025-10-10,Andina,Distribuidor,Deportes,Mancuernas,Asesor 07,18,140000,5,2394000
+V-0525,2025-10-11,Andina,Tienda física,Tecnología,Monitor,Asesor 01,12,750000,0,9000000
+V-0107,2025-10-12,Caribe,Tienda física,Deportes,Mancuernas,Asesor 05,23,140000,5,3059000
+V-0234,2025-10-12,Pacífica,Tienda física,Papelería,Kit de esferos,Asesor 07,15,15000,5,213750
+V-0507,2025-10-12,Andina,En línea,Deportes,Mancuernas,Asesor 08,21,140000,10,2646000
+V-0084,2025-10-13,Andina,En línea,Tecnología,Audífonos,Asesor 05,7,210000,0,1470000
+V-0321,2025-10-13,Amazonía,Distribuidor,Tecnología,Teclado,Asesor 03,3,120000,0,360000
+V-0465,2025-10-13,Caribe,Distribuidor,Tecnología,Monitor,Asesor 02,21,750000,0,15750000
+V-0054,2025-10-14,Andina,En línea,Papelería,Resma de papel,Asesor 05,15,22000,0,330000
+V-0547,2025-10-15,Andina,Tienda física,Hogar,Licuadora,Asesor 02,26,260000,0,6760000
+V-0026,2025-10-17,Andina,Tienda física,Hogar,Licuadora,Asesor 05,22,260000,15,4862000
+V-0430,2025-10-17,Caribe,Tienda física,Tecnología,Audífonos,Asesor 05,21,210000,0,4410000
+V-0336,2025-10-18,Orinoquía,En línea,Hogar,Licuadora,Asesor 06,3,260000,0,780000
+V-0606,2025-10-18,Caribe,En línea,Tecnología,Monitor,Asesor 05,7,750000,5,4987500
+V-0121,2025-10-19,Andina,Tienda física,Hogar,Aspiradora,Asesor 08,13,520000,15,5746000
+V-0221,2025-10-19,Andina,En línea,Papelería,Kit de esferos,Asesor 08,19,15000,10,256500
+V-0258,2025-10-19,Andina,Tienda física,Hogar,Cafetera,Asesor 05,27,340000,0,9180000
+V-0318,2025-10-19,Andina,Distribuidor,Papelería,Kit de esferos,Asesor 05,3,15000,15,38250
+V-0458,2025-10-19,Andina,Tienda física,Deportes,Mancuernas,Asesor 03,15,140000,0,2100000
+V-0364,2025-10-21,Andina,Distribuidor,Hogar,Licuadora,Asesor 03,12,260000,5,2964000
+V-0042,2025-10-22,Caribe,Tienda física,Deportes,Bicicleta estática,Asesor 05,19,1250000,10,21375000
+V-0125,2025-10-22,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 04,3,1250000,10,3375000
+V-0025,2025-10-23,Pacífica,Tienda física,Papelería,Kit de esferos,Asesor 03,22,15000,0,330000
+V-0174,2025-10-23,Caribe,Tienda física,Papelería,Resma de papel,Asesor 05,3,22000,5,62700
+V-0282,2025-10-23,Andina,En línea,Hogar,Aspiradora,Asesor 01,3,520000,0,1560000
+V-0495,2025-10-23,Caribe,En línea,Papelería,Agenda,Asesor 08,27,38000,0,1026000
+V-0002,2025-10-24,Amazonía,En línea,Deportes,Balón,Asesor 08,13,85000,10,994500
+V-0278,2025-10-24,Orinoquía,Distribuidor,Papelería,Agenda,Asesor 07,18,38000,10,615600
+V-0362,2025-10-25,Andina,En línea,Papelería,Kit de esferos,Asesor 07,9,15000,10,121500
+V-0349,2025-10-26,Andina,Tienda física,Tecnología,Monitor,Asesor 02,13,750000,0,9750000
+V-0603,2025-10-28,Caribe,Distribuidor,Tecnología,Audífonos,Asesor 01,3,210000,0,630000
+V-0333,2025-10-29,Pacífica,Distribuidor,Deportes,Balón,Asesor 05,7,85000,0,595000
+V-0481,2025-10-29,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 08,15,1250000,0,18750000
+V-0571,2025-10-29,Andina,Distribuidor,Tecnología,Portátil,Asesor 08,3,2800000,0,8400000
+V-0093,2025-10-30,Andina,Distribuidor,Deportes,Bicicleta estática,Asesor 06,6,1250000,5,7125000
+V-0237,2025-10-31,Pacífica,En línea,Hogar,Licuadora,Asesor 03,18,260000,10,4212000
+V-0442,2025-11-01,Andina,Tienda física,Hogar,Licuadora,Asesor 07,10,260000,5,2470000
+V-0033,2025-11-02,Caribe,Tienda física,Papelería,Resma de papel,Asesor 06,14,22000,5,292600
+V-0544,2025-11-02,Andina,Distribuidor,Hogar,Aspiradora,Asesor 04,18,520000,15,7956000
+V-0551,2025-11-02,Andina,En línea,Tecnología,Audífonos,Asesor 06,20,210000,0,4200000
+V-0011,2025-11-03,Caribe,En línea,Tecnología,Teclado,Asesor 05,23,120000,10,2484000
+V-0088,2025-11-03,Andina,Tienda física,Deportes,Mancuernas,Asesor 04,12,140000,0,1680000
+V-0211,2025-11-03,Andina,En línea,Hogar,Aspiradora,Asesor 08,15,520000,0,7800000
+V-0036,2025-11-04,Andina,Tienda física,Hogar,Licuadora,Asesor 05,18,260000,5,4446000
+V-0110,2025-11-05,Orinoquía,Tienda física,Hogar,Cafetera,Asesor 07,15,340000,0,5100000
+V-0637,2025-11-05,Pacífica,Tienda física,Tecnología,Audífonos,Asesor 01,20,210000,0,4200000
+V-0080,2025-11-07,Orinoquía,Tienda física,Deportes,Mancuernas,Asesor 07,6,140000,0,840000
+V-0314,2025-11-07,Andina,En línea,Hogar,Cafetera,Asesor 07,14,340000,0,4760000
+V-0589,2025-11-07,Pacífica,En línea,Hogar,Cafetera,Asesor 01,18,340000,0,6120000
+V-0179,2025-11-09,Andina,Distribuidor,Deportes,Bicicleta estática,Asesor 01,14,1250000,15,14875000
+V-0443,2025-11-09,Andina,Tienda física,Hogar,Licuadora,Asesor 04,18,260000,10,4212000
+V-0169,2025-11-10,Pacífica,En línea,Hogar,Licuadora,Asesor 08,2,260000,0,520000
+V-0017,2025-11-11,Pacífica,En línea,Tecnología,Teclado,Asesor 01,24,120000,0,2880000
+V-0065,2025-11-11,Orinoquía,En línea,Hogar,Cafetera,Asesor 06,5,340000,10,1530000
+V-0001,2025-11-13,Andina,Tienda física,Tecnología,Audífonos,Asesor 06,26,210000,0,5460000
+V-0591,2025-11-13,Pacífica,Tienda física,Papelería,Kit de esferos,Asesor 07,24,15000,5,342000
+V-0112,2025-11-14,Caribe,En línea,Papelería,Agenda,Asesor 03,24,38000,5,866400
+V-0070,2025-11-15,Andina,En línea,Hogar,Cafetera,Asesor 04,26,340000,0,8840000
+V-0398,2025-11-15,Andina,En línea,Tecnología,Teclado,Asesor 08,20,120000,0,2400000
+V-0060,2025-11-17,Andina,Tienda física,Hogar,Licuadora,Asesor 07,20,260000,0,5200000
+V-0134,2025-11-17,Andina,Distribuidor,Tecnología,Audífonos,Asesor 08,2,210000,10,378000
+V-0534,2025-11-17,Andina,Distribuidor,Hogar,Licuadora,Asesor 08,3,260000,0,780000
+V-0374,2025-11-18,Pacífica,Tienda física,Hogar,Licuadora,Asesor 06,24,260000,5,5928000
+V-0307,2025-11-19,Andina,En línea,Hogar,Cafetera,Asesor 07,23,340000,0,7820000
+V-0373,2025-11-19,Andina,Tienda física,Tecnología,Audífonos,Asesor 03,8,210000,5,1596000
+V-0386,2025-11-19,Pacífica,En línea,Tecnología,Teclado,Asesor 05,11,120000,5,1254000
+V-0185,2025-11-20,Andina,Tienda física,Tecnología,Teclado,Asesor 04,21,120000,0,2520000
+V-0192,2025-11-20,Caribe,En línea,Hogar,Cafetera,Asesor 02,23,340000,0,7820000
+V-0517,2025-11-20,Andina,Tienda física,Deportes,Balón,Asesor 06,8,85000,10,612000
+V-0576,2025-11-20,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 01,14,120000,0,1680000
+V-0018,2025-11-21,Andina,Tienda física,Hogar,Cafetera,Asesor 03,6,340000,5,1938000
+V-0044,2025-11-21,Caribe,Tienda física,Papelería,Resma de papel,Asesor 08,15,22000,0,330000
+V-0223,2025-11-21,Andina,Distribuidor,Tecnología,Portátil,Asesor 05,28,2800000,5,74480000
+V-0546,2025-11-21,Amazonía,Tienda física,Tecnología,Portátil,Asesor 04,3,2800000,10,7560000
+V-0582,2025-11-21,Pacífica,En línea,Hogar,Cafetera,Asesor 08,3,340000,0,1020000
+V-0536,2025-11-22,Caribe,En línea,Tecnología,Portátil,Asesor 01,14,2800000,10,35280000
+V-0246,2025-11-23,Amazonía,Distribuidor,Hogar,Aspiradora,Asesor 08,3,520000,0,1560000
+V-0341,2025-11-23,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 05,6,1250000,0,7500000
+V-0409,2025-11-23,Pacífica,Distribuidor,Tecnología,Audífonos,Asesor 07,23,210000,5,4588500
+V-0516,2025-11-23,Orinoquía,Distribuidor,Tecnología,Portátil,Asesor 08,2,2800000,0,5600000
+V-0215,2025-11-24,Andina,En línea,Tecnología,Teclado,Asesor 08,8,120000,5,912000
+V-0304,2025-11-25,Andina,Tienda física,Tecnología,Portátil,Asesor 02,3,2800000,0,8400000
+V-0502,2025-11-25,Caribe,Distribuidor,Tecnología,Teclado,Asesor 08,15,120000,5,1710000
+V-0558,2025-11-25,Andina,En línea,Hogar,Aspiradora,Asesor 01,5,520000,15,2210000
+V-0235,2025-11-27,Pacífica,En línea,Hogar,Cafetera,Asesor 05,26,340000,0,8840000
+V-0309,2025-11-27,Andina,Tienda física,Hogar,Cafetera,Asesor 05,14,340000,0,4760000
+V-0008,2025-11-28,Caribe,Distribuidor,Papelería,Kit de esferos,Asesor 07,28,15000,5,399000
+V-0184,2025-11-28,Orinoquía,Distribuidor,Tecnología,Audífonos,Asesor 02,23,210000,0,4830000
+V-0188,2025-11-28,Andina,Tienda física,Hogar,Licuadora,Asesor 07,9,260000,5,2223000
+V-0238,2025-11-28,Andina,Tienda física,Deportes,Bicicleta estática,Asesor 07,22,1250000,0,27500000
+V-0317,2025-11-28,Pacífica,En línea,Deportes,Balón,Asesor 05,14,85000,0,1190000
+V-0425,2025-11-28,Caribe,Tienda física,Tecnología,Teclado,Asesor 02,22,120000,10,2376000
+V-0639,2025-11-29,Amazonía,En línea,Papelería,Agenda,Asesor 04,15,38000,0,570000
+V-0193,2025-11-30,Andina,Tienda física,Papelería,Resma de papel,Asesor 04,22,22000,15,411400
+V-0379,2025-11-30,Caribe,En línea,Papelería,Resma de papel,Asesor 02,25,22000,0,550000
+V-0404,2025-12-02,Andina,Tienda física,Papelería,Agenda,Asesor 08,4,38000,10,136800
+V-0366,2025-12-04,Andina,Tienda física,Deportes,Mancuernas,Asesor 04,37,140000,5,4921000
+V-0464,2025-12-04,Orinoquía,En línea,Hogar,Licuadora,Asesor 07,12,260000,5,2964000
+V-0104,2025-12-05,Andina,En línea,Tecnología,Portátil,Asesor 01,31,2800000,5,82460000
+V-0400,2025-12-05,Caribe,Distribuidor,Papelería,Agenda,Asesor 01,29,38000,10,991800
+V-0552,2025-12-05,Orinoquía,En línea,Hogar,Cafetera,Asesor 01,2,340000,0,680000
+V-0628,2025-12-05,Andina,Tienda física,Tecnología,Monitor,Asesor 06,14,750000,10,9450000
+V-0537,2025-12-07,Pacífica,Tienda física,Papelería,Resma de papel,Asesor 02,35,22000,0,770000
+V-0013,2025-12-08,Andina,En línea,Tecnología,Audífonos,Asesor 08,19,210000,15,3391500
+V-0212,2025-12-08,Amazonía,En línea,Hogar,Cafetera,Asesor 05,4,340000,10,1224000
+V-0117,2025-12-09,Andina,En línea,Papelería,Resma de papel,Asesor 01,29,22000,0,638000
+V-0540,2025-12-10,Caribe,En línea,Papelería,Resma de papel,Asesor 04,37,22000,10,732600
+V-0265,2025-12-11,Andina,En línea,Tecnología,Portátil,Asesor 08,14,2800000,5,37240000
+V-0014,2025-12-12,Andina,Tienda física,Tecnología,Portátil,Asesor 03,35,2800000,5,93100000
+V-0324,2025-12-12,Orinoquía,Tienda física,Tecnología,Monitor,Asesor 01,17,750000,0,12750000
+V-0244,2025-12-14,Andina,Tienda física,Tecnología,Monitor,Asesor 04,10,750000,15,6375000
+V-0283,2025-12-14,Andina,Tienda física,Tecnología,Audífonos,Asesor 03,33,210000,0,6930000
+V-0365,2025-12-15,Caribe,Tienda física,Papelería,Resma de papel,Asesor 08,6,22000,15,112200
+V-0063,2025-12-16,Caribe,Tienda física,Deportes,Balón,Asesor 04,23,85000,10,1759500
+V-0180,2025-12-16,Caribe,Tienda física,Papelería,Resma de papel,Asesor 02,21,22000,0,462000
+V-0236,2025-12-16,Andina,Tienda física,Papelería,Kit de esferos,Asesor 07,33,15000,15,420750
+V-0363,2025-12-16,Orinoquía,Distribuidor,Deportes,Mancuernas,Asesor 03,2,140000,10,252000
+V-0039,2025-12-18,Orinoquía,Tienda física,Tecnología,Portátil,Asesor 03,21,2800000,0,58800000
+V-0058,2025-12-18,Caribe,Tienda física,Papelería,Kit de esferos,Asesor 01,4,15000,5,57000
+V-0484,2025-12-18,Orinoquía,Tienda física,Papelería,Resma de papel,Asesor 05,2,22000,15,37400
+V-0575,2025-12-18,Pacífica,En línea,Papelería,Resma de papel,Asesor 01,2,22000,0,44000
+V-0327,2025-12-19,Andina,Tienda física,Tecnología,Audífonos,Asesor 08,6,210000,0,1260000
+V-0050,2025-12-21,Caribe,Tienda física,Hogar,Licuadora,Asesor 01,4,260000,0,1040000
+V-0150,2025-12-22,Andina,Distribuidor,Tecnología,Teclado,Asesor 03,29,120000,5,3306000
+V-0294,2025-12-22,Andina,En línea,Deportes,Bicicleta estática,Asesor 01,13,1250000,0,16250000
+V-0056,2025-12-23,Pacífica,Tienda física,Tecnología,Monitor,Asesor 02,27,750000,10,18225000
+V-0041,2025-12-24,Caribe,En línea,Deportes,Bicicleta estática,Asesor 07,38,1250000,0,47500000
+V-0144,2025-12-24,Pacífica,En línea,Hogar,Cafetera,Asesor 02,31,340000,0,10540000
+V-0370,2025-12-24,Orinoquía,Tienda física,Tecnología,Teclado,Asesor 08,6,120000,0,720000
+V-0040,2025-12-26,Andina,En línea,Papelería,Kit de esferos,Asesor 03,6,15000,0,90000
+V-0243,2025-12-26,Andina,Tienda física,Hogar,Licuadora,Asesor 07,15,260000,15,3315000
+V-0066,2025-12-27,Caribe,En línea,Papelería,Resma de papel,Asesor 07,36,22000,0,792000
+V-0230,2025-12-27,Pacífica,Tienda física,Papelería,Kit de esferos,Asesor 08,27,15000,5,384750
+V-0049,2025-12-28,Andina,Tienda física,Hogar,Cafetera,Asesor 01,23,340000,5,7429000
+V-0302,2025-12-28,Andina,Distribuidor,Tecnología,Teclado,Asesor 04,25,120000,15,2550000
+V-0369,2025-12-28,Caribe,Distribuidor,Tecnología,Audífonos,Asesor 06,6,210000,0,1260000
+V-0471,2025-12-29,Caribe,Tienda física,Tecnología,Monitor,Asesor 03,27,750000,5,19237500
+V-0331,2025-12-31,Amazonía,Tienda física,Tecnología,Teclado,Asesor 07,23,120000,0,2760000
+V-0599,2025-12-31,Pacífica,Distribuidor,Papelería,Agenda,Asesor 07,10,38000,5,361000
+V-0494,2025-01-06,Caribe,Tienda física,Deportes,Balón,Asesor 05,15,85000,0,1275000
+V-0022,2025-04-25,Pacífica,Tienda física,Hogar,Licuadora,Asesor 06,8,260000,0,2080000

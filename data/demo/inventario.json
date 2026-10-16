@@ -1,0 +1,785 @@
+{
+  "generado": "Datos ficticios de demostración",
+  "data": [
+    {
+      "sku": "SKU-1001",
+      "producto": "Portátil",
+      "categoria": "Tecnología",
+      "bodega": "Bogotá",
+      "stock": 59,
+      "stock_minimo": 17,
+      "costo_unitario": 1870229,
+      "ultima_entrada": "2025-07-19",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1002",
+      "producto": "Portátil",
+      "categoria": "Tecnología",
+      "bodega": "Medellín",
+      "stock": 107,
+      "stock_minimo": 29,
+      "costo_unitario": 1659142,
+      "ultima_entrada": "2025-06-15",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1003",
+      "producto": "Portátil",
+      "categoria": "Tecnología",
+      "bodega": "Cali",
+      "stock": 81,
+      "stock_minimo": 37,
+      "costo_unitario": 1840203,
+      "ultima_entrada": "2025-07-25",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1004",
+      "producto": "Portátil",
+      "categoria": "Tecnología",
+      "bodega": "Barranquilla",
+      "stock": 26,
+      "stock_minimo": 12,
+      "costo_unitario": 1922047,
+      "ultima_entrada": "2025-06-01",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1005",
+      "producto": "Monitor",
+      "categoria": "Tecnología",
+      "bodega": "Bogotá",
+      "stock": 17,
+      "stock_minimo": 32,
+      "costo_unitario": 429642,
+      "ultima_entrada": "2025-10-03",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1006",
+      "producto": "Monitor",
+      "categoria": "Tecnología",
+      "bodega": "Medellín",
+      "stock": 118,
+      "stock_minimo": 35,
+      "costo_unitario": 484396,
+      "ultima_entrada": "2025-06-30",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1007",
+      "producto": "Monitor",
+      "categoria": "Tecnología",
+      "bodega": "Cali",
+      "stock": 63,
+      "stock_minimo": 12,
+      "costo_unitario": 442858,
+      "ultima_entrada": "2025-07-23",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1008",
+      "producto": "Monitor",
+      "categoria": "Tecnología",
+      "bodega": "Barranquilla",
+      "stock": 13,
+      "stock_minimo": 16,
+      "costo_unitario": 428836,
+      "ultima_entrada": "2025-10-04",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1009",
+      "producto": "Teclado",
+      "categoria": "Tecnología",
+      "bodega": "Bogotá",
+      "stock": 195,
+      "stock_minimo": 35,
+      "costo_unitario": 83781,
+      "ultima_entrada": "2025-08-04",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1010",
+      "producto": "Teclado",
+      "categoria": "Tecnología",
+      "bodega": "Medellín",
+      "stock": 31,
+      "stock_minimo": 11,
+      "costo_unitario": 73552,
+      "ultima_entrada": "2025-09-15",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1011",
+      "producto": "Teclado",
+      "categoria": "Tecnología",
+      "bodega": "Cali",
+      "stock": 9,
+      "stock_minimo": 22,
+      "costo_unitario": 80249,
+      "ultima_entrada": "2025-08-02",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1012",
+      "producto": "Teclado",
+      "categoria": "Tecnología",
+      "bodega": "Barranquilla",
+      "stock": 110,
+      "stock_minimo": 19,
+      "costo_unitario": 75735,
+      "ultima_entrada": "2025-08-30",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1013",
+      "producto": "Audífonos",
+      "categoria": "Tecnología",
+      "bodega": "Bogotá",
+      "stock": 79,
+      "stock_minimo": 16,
+      "costo_unitario": 138862,
+      "ultima_entrada": "2025-09-17",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1014",
+      "producto": "Audífonos",
+      "categoria": "Tecnología",
+      "bodega": "Medellín",
+      "stock": 24,
+      "stock_minimo": 31,
+      "costo_unitario": 120739,
+      "ultima_entrada": "2025-07-05",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1015",
+      "producto": "Audífonos",
+      "categoria": "Tecnología",
+      "bodega": "Cali",
+      "stock": 84,
+      "stock_minimo": 27,
+      "costo_unitario": 119323,
+      "ultima_entrada": "2025-07-05",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1016",
+      "producto": "Audífonos",
+      "categoria": "Tecnología",
+      "bodega": "Barranquilla",
+      "stock": 68,
+      "stock_minimo": 24,
+      "costo_unitario": 139096,
+      "ultima_entrada": "2025-07-31",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1017",
+      "producto": "Licuadora",
+      "categoria": "Hogar",
+      "bodega": "Bogotá",
+      "stock": 58,
+      "stock_minimo": 23,
+      "costo_unitario": 178031,
+      "ultima_entrada": "2025-07-26",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1018",
+      "producto": "Licuadora",
+      "categoria": "Hogar",
+      "bodega": "Medellín",
+      "stock": 132,
+      "stock_minimo": 34,
+      "costo_unitario": 153982,
+      "ultima_entrada": "2025-06-17",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1019",
+      "producto": "Licuadora",
+      "categoria": "Hogar",
+      "bodega": "Cali",
+      "stock": 112,
+      "stock_minimo": 30,
+      "costo_unitario": 164158,
+      "ultima_entrada": "2025-06-06",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1020",
+      "producto": "Licuadora",
+      "categoria": "Hogar",
+      "bodega": "Barranquilla",
+      "stock": 43,
+      "stock_minimo": 31,
+      "costo_unitario": 172615,
+      "ultima_entrada": "2025-09-18",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1021",
+      "producto": "Cafetera",
+      "categoria": "Hogar",
+      "bodega": "Bogotá",
+      "stock": 29,
+      "stock_minimo": 35,
+      "costo_unitario": 208874,
+      "ultima_entrada": "2025-09-22",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1022",
+      "producto": "Cafetera",
+      "categoria": "Hogar",
+      "bodega": "Medellín",
+      "stock": 76,
+      "stock_minimo": 33,
+      "costo_unitario": 197507,
+      "ultima_entrada": "2025-09-14",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1023",
+      "producto": "Cafetera",
+      "categoria": "Hogar",
+      "bodega": "Cali",
+      "stock": 64,
+      "stock_minimo": 16,
+      "costo_unitario": 190324,
+      "ultima_entrada": "2025-09-02",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1024",
+      "producto": "Cafetera",
+      "categoria": "Hogar",
+      "bodega": "Barranquilla",
+      "stock": 36,
+      "stock_minimo": 11,
+      "costo_unitario": 205338,
+      "ultima_entrada": "2025-07-08",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1025",
+      "producto": "Aspiradora",
+      "categoria": "Hogar",
+      "bodega": "Bogotá",
+      "stock": 94,
+      "stock_minimo": 38,
+      "costo_unitario": 342796,
+      "ultima_entrada": "2025-06-06",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1026",
+      "producto": "Aspiradora",
+      "categoria": "Hogar",
+      "bodega": "Medellín",
+      "stock": 173,
+      "stock_minimo": 35,
+      "costo_unitario": 303054,
+      "ultima_entrada": "2025-07-12",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1027",
+      "producto": "Aspiradora",
+      "categoria": "Hogar",
+      "bodega": "Cali",
+      "stock": 142,
+      "stock_minimo": 31,
+      "costo_unitario": 355131,
+      "ultima_entrada": "2025-06-02",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1028",
+      "producto": "Aspiradora",
+      "categoria": "Hogar",
+      "bodega": "Barranquilla",
+      "stock": 10,
+      "stock_minimo": 40,
+      "costo_unitario": 317856,
+      "ultima_entrada": "2025-07-29",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1029",
+      "producto": "Resma de papel",
+      "categoria": "Papelería",
+      "bodega": "Bogotá",
+      "stock": 114,
+      "stock_minimo": 19,
+      "costo_unitario": 14522,
+      "ultima_entrada": "2025-09-14",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1030",
+      "producto": "Resma de papel",
+      "categoria": "Papelería",
+      "bodega": "Medellín",
+      "stock": 38,
+      "stock_minimo": 15,
+      "costo_unitario": 14173,
+      "ultima_entrada": "2025-06-04",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1031",
+      "producto": "Resma de papel",
+      "categoria": "Papelería",
+      "bodega": "Cali",
+      "stock": 169,
+      "stock_minimo": 37,
+      "costo_unitario": 13553,
+      "ultima_entrada": "2025-05-31",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1032",
+      "producto": "Resma de papel",
+      "categoria": "Papelería",
+      "bodega": "Barranquilla",
+      "stock": 49,
+      "stock_minimo": 12,
+      "costo_unitario": 15112,
+      "ultima_entrada": "2025-08-31",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1033",
+      "producto": "Kit de esferos",
+      "categoria": "Papelería",
+      "bodega": "Bogotá",
+      "stock": 39,
+      "stock_minimo": 20,
+      "costo_unitario": 9501,
+      "ultima_entrada": "2025-09-04",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1034",
+      "producto": "Kit de esferos",
+      "categoria": "Papelería",
+      "bodega": "Medellín",
+      "stock": 179,
+      "stock_minimo": 30,
+      "costo_unitario": 9330,
+      "ultima_entrada": "2025-06-12",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1035",
+      "producto": "Kit de esferos",
+      "categoria": "Papelería",
+      "bodega": "Cali",
+      "stock": 85,
+      "stock_minimo": 40,
+      "costo_unitario": 9226,
+      "ultima_entrada": "2025-08-26",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1036",
+      "producto": "Kit de esferos",
+      "categoria": "Papelería",
+      "bodega": "Barranquilla",
+      "stock": 30,
+      "stock_minimo": 35,
+      "costo_unitario": 9666,
+      "ultima_entrada": "2025-08-01",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1037",
+      "producto": "Agenda",
+      "categoria": "Papelería",
+      "bodega": "Bogotá",
+      "stock": 34,
+      "stock_minimo": 40,
+      "costo_unitario": 20995,
+      "ultima_entrada": "2025-10-07",
+      "requiere_reposicion": true,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1038",
+      "producto": "Agenda",
+      "categoria": "Papelería",
+      "bodega": "Medellín",
+      "stock": 82,
+      "stock_minimo": 18,
+      "costo_unitario": 21645,
+      "ultima_entrada": "2025-07-06",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1039",
+      "producto": "Agenda",
+      "categoria": "Papelería",
+      "bodega": "Cali",
+      "stock": 20,
+      "stock_minimo": 16,
+      "costo_unitario": 22076,
+      "ultima_entrada": "2025-10-08",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1040",
+      "producto": "Agenda",
+      "categoria": "Papelería",
+      "bodega": "Barranquilla",
+      "stock": 14,
+      "stock_minimo": 10,
+      "costo_unitario": 22812,
+      "ultima_entrada": "2025-09-25",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1041",
+      "producto": "Bicicleta estática",
+      "categoria": "Deportes",
+      "bodega": "Bogotá",
+      "stock": 65,
+      "stock_minimo": 15,
+      "costo_unitario": 741312,
+      "ultima_entrada": "2025-09-14",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1042",
+      "producto": "Bicicleta estática",
+      "categoria": "Deportes",
+      "bodega": "Medellín",
+      "stock": 43,
+      "stock_minimo": 31,
+      "costo_unitario": 778648,
+      "ultima_entrada": "2025-10-07",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1043",
+      "producto": "Bicicleta estática",
+      "categoria": "Deportes",
+      "bodega": "Cali",
+      "stock": 128,
+      "stock_minimo": 25,
+      "costo_unitario": 826067,
+      "ultima_entrada": "2025-08-23",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1044",
+      "producto": "Bicicleta estática",
+      "categoria": "Deportes",
+      "bodega": "Barranquilla",
+      "stock": 53,
+      "stock_minimo": 33,
+      "costo_unitario": 807717,
+      "ultima_entrada": "2025-06-20",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1045",
+      "producto": "Balón",
+      "categoria": "Deportes",
+      "bodega": "Bogotá",
+      "stock": 71,
+      "stock_minimo": 19,
+      "costo_unitario": 58453,
+      "ultima_entrada": "2025-09-20",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1046",
+      "producto": "Balón",
+      "categoria": "Deportes",
+      "bodega": "Medellín",
+      "stock": 45,
+      "stock_minimo": 12,
+      "costo_unitario": 47995,
+      "ultima_entrada": "2025-09-02",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "TecnoImport",
+        "pais": "China"
+      }
+    },
+    {
+      "sku": "SKU-1047",
+      "producto": "Balón",
+      "categoria": "Deportes",
+      "bodega": "Cali",
+      "stock": 16,
+      "stock_minimo": 14,
+      "costo_unitario": 57965,
+      "ultima_entrada": "2025-07-08",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1048",
+      "producto": "Balón",
+      "categoria": "Deportes",
+      "bodega": "Barranquilla",
+      "stock": 83,
+      "stock_minimo": 26,
+      "costo_unitario": 49922,
+      "ultima_entrada": "2025-09-13",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    },
+    {
+      "sku": "SKU-1049",
+      "producto": "Mancuernas",
+      "categoria": "Deportes",
+      "bodega": "Bogotá",
+      "stock": 37,
+      "stock_minimo": 22,
+      "costo_unitario": 96076,
+      "ultima_entrada": "2025-10-08",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1050",
+      "producto": "Mancuernas",
+      "categoria": "Deportes",
+      "bodega": "Medellín",
+      "stock": 181,
+      "stock_minimo": 36,
+      "costo_unitario": 78354,
+      "ultima_entrada": "2025-10-02",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Distribuciones del Norte",
+        "pais": "México"
+      }
+    },
+    {
+      "sku": "SKU-1051",
+      "producto": "Mancuernas",
+      "categoria": "Deportes",
+      "bodega": "Cali",
+      "stock": 79,
+      "stock_minimo": 24,
+      "costo_unitario": 82556,
+      "ultima_entrada": "2025-07-07",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Suministros Andinos",
+        "pais": "Colombia"
+      }
+    },
+    {
+      "sku": "SKU-1052",
+      "producto": "Mancuernas",
+      "categoria": "Deportes",
+      "bodega": "Barranquilla",
+      "stock": 49,
+      "stock_minimo": 23,
+      "costo_unitario": 95277,
+      "ultima_entrada": "2025-07-04",
+      "requiere_reposicion": false,
+      "proveedor": {
+        "nombre": "Global Parts",
+        "pais": "Estados Unidos"
+      }
+    }
+  ]
+}

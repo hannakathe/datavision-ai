@@ -1,0 +1,169 @@
+mes;cuenta;tipo;centro_costo;presupuesto;ejecutado
+2024-01;Ingresos por ventas;Ingreso;Comercial;420.000.000,00;439.218.646,29
+2024-01;Nómina;Gasto;Administración;180.000.000,00;200.628.095,10
+2024-01;Arriendo;Gasto;Administración;32.000.000,00;34.322.666,57
+2024-01;Marketing digital;Gasto;Comercial;28.000.000,00;25.023.867,10
+2024-01;Tecnología;Gasto;Operaciones;22.000.000,00;19.454.462,25
+2024-01;Servicios públicos;Gasto;Operaciones;9.000.000,00;9.355.501,81
+2024-01;Transporte;Gasto;Operaciones;15.000.000,00;13.104.578,91
+2024-02;Ingresos por ventas;Ingreso;Comercial;425.040.000,00;376.757.245,71
+2024-02;Nómina;Gasto;Administración;182.160.000,00;204.947.231,31
+2024-02;Arriendo;Gasto;Administración;32.384.000,00;32.599.481,15
+2024-02;Marketing digital;Gasto;Comercial;28.336.000,00;23.010.192,35
+2024-02;Tecnología;Gasto;Operaciones;22.264.000,00;21.204.193,18
+2024-02;Servicios públicos;Gasto;Operaciones;9.108.000,00;8.377.573,75
+2024-02;Transporte;Gasto;Operaciones;15.180.000,00;14.209.175,81
+2024-03;Ingresos por ventas;Ingreso;Comercial;430.080.000,00;377.559.121,55
+2024-03;Nómina;Gasto;Administración;184.320.000,00;152.506.658,45
+2024-03;Arriendo;Gasto;Administración;32.768.000,00;33.265.391,16
+2024-03;Marketing digital;Gasto;Comercial;28.672.000,00;28.537.842,70
+2024-03;Tecnología;Gasto;Operaciones;22.528.000,00;19.517.020,64
+2024-03;Servicios públicos;Gasto;Operaciones;9.216.000,00;7.688.511,16
+2024-03;Transporte;Gasto;Operaciones;15.360.000,00;12.625.802,56
+2024-04;Ingresos por ventas;Ingreso;Comercial;435.120.000,00;424.172.236,85
+2024-04;Nómina;Gasto;Administración;186.480.000,00;171.573.331,68
+2024-04;Arriendo;Gasto;Administración;33.152.000,00;33.078.867,66
+2024-04;Marketing digital;Gasto;Comercial;29.008.000,00;31.224.062,76
+2024-04;Tecnología;Gasto;Operaciones;22.792.000,00;23.893.752,87
+2024-04;Servicios públicos;Gasto;Operaciones;9.324.000,00;8.630.116,25
+2024-04;Transporte;Gasto;Operaciones;15.540.000,00;14.443.897,28
+2024-05;Ingresos por ventas;Ingreso;Comercial;440.160.000,00;432.980.367,89
+2024-05;Nómina;Gasto;Administración;188.640.000,00;160.507.805,77
+2024-05;Arriendo;Gasto;Administración;33.536.000,00;36.052.390,13
+2024-05;Marketing digital;Gasto;Comercial;29.344.000,00;25.126.056,39
+2024-05;Tecnología;Gasto;Operaciones;23.056.000,00;18.467.830,44
+2024-05;Servicios públicos;Gasto;Operaciones;9.432.000,00;8.671.016,00
+2024-05;Transporte;Gasto;Operaciones;15.720.000,00;13.154.845,38
+2024-06;Ingresos por ventas;Ingreso;Comercial;445.200.000,00;400.114.020,26
+2024-06;Nómina;Gasto;Administración;190.800.000,00;218.853.209,57
+2024-06;Arriendo;Gasto;Administración;33.920.000,00;32.717.726,39
+2024-06;Marketing digital;Gasto;Comercial;29.680.000,00;32.628.827,12
+2024-06;Tecnología;Gasto;Operaciones;23.320.000,00;25.612.490,28
+2024-06;Servicios públicos;Gasto;Operaciones;9.540.000,00;10.576.336,49
+2024-06;Transporte;Gasto;Operaciones;15.900.000,00;13.662.724,03
+2024-07;Ingresos por ventas;Ingreso;Comercial;450.240.000,00;506.703.100,51
+2024-07;Nómina;Gasto;Administración;192.960.000,00;191.509.546,98
+2024-07;Arriendo;Gasto;Administración;34.304.000,00;33.944.705,19
+2024-07;Marketing digital;Gasto;Comercial;30.016.000,00;30.812.870,52
+2024-07;Tecnología;Gasto;Operaciones;23.584.000,00;23.139.584,48
+2024-07;Servicios públicos;Gasto;Operaciones;9.648.000,00;9.257.631,22
+2024-07;Transporte;Gasto;Operaciones;16.080.000,00;15.232.021,12
+2024-08;Ingresos por ventas;Ingreso;Comercial;455.280.000,00;397.390.048,44
+2024-08;Nómina;Gasto;Administración;195.120.000,00;167.444.858,50
+2024-08;Arriendo;Gasto;Administración;34.688.000,00;36.030.145,18
+2024-08;Marketing digital;Gasto;Comercial;30.352.000,00;31.733.035,48
+2024-08;Tecnología;Gasto;Operaciones;23.848.000,00;19.797.403,31
+2024-08;Servicios públicos;Gasto;Operaciones;9.756.000,00;8.204.995,23
+2024-08;Transporte;Gasto;Operaciones;16.260.000,00;18.618.907,22
+2024-09;Ingresos por ventas;Ingreso;Comercial;460.320.000,00;495.140.530,28
+2024-09;Nómina;Gasto;Administración;197.280.000,00;202.733.247,54
+2024-09;Arriendo;Gasto;Administración;35.072.000,00;32.440.313,91
+2024-09;Marketing digital;Gasto;Comercial;30.688.000,00;35.229.824,38
+2024-09;Tecnología;Gasto;Operaciones;24.112.000,00;21.703.911,81
+2024-09;Servicios públicos;Gasto;Operaciones;9.864.000,00;11.269.316,48
+2024-09;Transporte;Gasto;Operaciones;16.440.000,00;17.442.334,44
+2024-10;Ingresos por ventas;Ingreso;Comercial;465.360.000,00;511.945.337,83
+2024-10;Nómina;Gasto;Administración;199.440.000,00;177.867.411,65
+2024-10;Arriendo;Gasto;Administración;35.456.000,00;34.284.324,29
+2024-10;Marketing digital;Gasto;Comercial;31.024.000,00;33.378.514,35
+2024-10;Tecnología;Gasto;Operaciones;24.376.000,00;19.874.118,11
+2024-10;Servicios públicos;Gasto;Operaciones;9.972.000,00;10.297.004,36
+2024-10;Transporte;Gasto;Operaciones;16.620.000,00;16.226.999,86
+2024-11;Ingresos por ventas;Ingreso;Comercial;470.400.000,00;519.241.562,37
+2024-11;Nómina;Gasto;Administración;201.600.000,00;172.213.838,41
+2024-11;Arriendo;Gasto;Administración;35.840.000,00;31.219.485,41
+2024-11;Marketing digital;Gasto;Comercial;31.360.000,00;33.907.113,16
+2024-11;Tecnología;Gasto;Operaciones;24.640.000,00;25.024.530,85
+2024-11;Servicios públicos;Gasto;Operaciones;10.080.000,00;9.122.844,19
+2024-11;Transporte;Gasto;Operaciones;16.800.000,00;17.060.612,83
+2024-12;Ingresos por ventas;Ingreso;Comercial;475.440.000,00;534.268.714,68
+2024-12;Nómina;Gasto;Administración;203.760.000,00;208.137.238,38
+2024-12;Arriendo;Gasto;Administración;36.224.000,00;29.950.254,22
+2024-12;Marketing digital;Gasto;Comercial;31.696.000,00;32.961.652,67
+2024-12;Tecnología;Gasto;Operaciones;24.904.000,00;24.901.935,24
+2024-12;Servicios públicos;Gasto;Operaciones;10.188.000,00;8.369.050,83
+2024-12;Transporte;Gasto;Operaciones;16.980.000,00;19.358.745,24
+2025-01;Ingresos por ventas;Ingreso;Comercial;480.480.000,00;471.654.740,56
+2025-01;Nómina;Gasto;Administración;205.920.000,00;232.908.418,14
+2025-01;Arriendo;Gasto;Administración;36.608.000,00;33.756.229,26
+2025-01;Marketing digital;Gasto;Comercial;32.032.000,00;33.295.605,88
+2025-01;Tecnología;Gasto;Operaciones;25.168.000,00;24.072.410,78
+2025-01;Servicios públicos;Gasto;Operaciones;10.296.000,00;8.792.811,22
+2025-01;Transporte;Gasto;Operaciones;17.160.000,00;15.047.076,17
+2025-02;Ingresos por ventas;Ingreso;Comercial;485.520.000,00;542.885.894,18
+2025-02;Nómina;Gasto;Administración;208.080.000,00;180.424.952,82
+2025-02;Arriendo;Gasto;Administración;36.992.000,00;37.228.149,20
+2025-02;Marketing digital;Gasto;Comercial;32.368.000,00;31.680.549,35
+2025-02;Tecnología;Gasto;Operaciones;25.432.000,00;21.934.466,28
+2025-02;Servicios públicos;Gasto;Operaciones;10.404.000,00;10.439.359,95
+2025-02;Transporte;Gasto;Operaciones;17.340.000,00;17.358.296,61
+2025-03;Ingresos por ventas;Ingreso;Comercial;490.560.000,00;429.817.382,48
+2025-03;Nómina;Gasto;Administración;210.240.000,00;236.954.010,98
+2025-03;Arriendo;Gasto;Administración;37.376.000,00;40.064.075,44
+2025-03;Marketing digital;Gasto;Comercial;32.704.000,00;29.785.807,70
+2025-03;Tecnología;Gasto;Operaciones;25.696.000,00;28.373.745,13
+2025-03;Servicios públicos;Gasto;Operaciones;10.512.000,00;10.112.387,57
+2025-03;Transporte;Gasto;Operaciones;17.520.000,00;14.057.655,05
+2025-04;Ingresos por ventas;Ingreso;Comercial;495.600.000,00;464.482.384,48
+2025-04;Nómina;Gasto;Administración;212.400.000,00;190.353.596,41
+2025-04;Arriendo;Gasto;Administración;37.760.000,00;37.775.542,68
+2025-04;Marketing digital;Gasto;Comercial;33.040.000,00;36.547.769,35
+2025-04;Tecnología;Gasto;Operaciones;25.960.000,00;24.068.179,60
+2025-04;Servicios públicos;Gasto;Operaciones;10.620.000,00;9.689.189,14
+2025-04;Transporte;Gasto;Operaciones;17.700.000,00;17.004.765,92
+2025-05;Ingresos por ventas;Ingreso;Comercial;500.640.000,00;542.221.452,43
+2025-05;Nómina;Gasto;Administración;214.560.000,00;190.656.185,33
+2025-05;Arriendo;Gasto;Administración;38.144.000,00;40.234.349,75
+2025-05;Marketing digital;Gasto;Comercial;33.376.000,00;28.193.721,72
+2025-05;Tecnología;Gasto;Operaciones;26.224.000,00;25.011.136,57
+2025-05;Servicios públicos;Gasto;Operaciones;10.728.000,00;9.136.957,54
+2025-05;Transporte;Gasto;Operaciones;17.880.000,00;20.055.030,43
+2025-06;Ingresos por ventas;Ingreso;Comercial;505.680.000,00;461.605.269,97
+2025-06;Nómina;Gasto;Administración;216.720.000,00;224.221.989,49
+2025-06;Arriendo;Gasto;Administración;38.528.000,00;40.167.963,26
+2025-06;Marketing digital;Gasto;Comercial;33.712.000,00;31.605.715,57
+2025-06;Tecnología;Gasto;Operaciones;26.488.000,00;28.015.541,99
+2025-06;Servicios públicos;Gasto;Operaciones;10.836.000,00;10.994.949,73
+2025-06;Transporte;Gasto;Operaciones;18.060.000,00;16.444.806,36
+2025-07;Ingresos por ventas;Ingreso;Comercial;510.720.000,00;504.749.732,39
+2025-07;Nómina;Gasto;Administración;218.880.000,00;243.784.869,92
+2025-07;Arriendo;Gasto;Administración;38.912.000,00;44.495.272,01
+2025-07;Marketing digital;Gasto;Comercial;34.048.000,00;29.159.479,47
+2025-07;Tecnología;Gasto;Operaciones;26.752.000,00;26.200.076,19
+2025-07;Servicios públicos;Gasto;Operaciones;10.944.000,00;9.681.314,03
+2025-07;Transporte;Gasto;Operaciones;18.240.000,00;17.041.644,36
+2025-08;Ingresos por ventas;Ingreso;Comercial;515.760.000,00;540.092.097,98
+2025-08;Nómina;Gasto;Administración;221.040.000,00;194.486.245,26
+2025-08;Arriendo;Gasto;Administración;39.296.000,00;38.101.358,57
+2025-08;Marketing digital;Gasto;Comercial;34.384.000,00;35.429.045,18
+2025-08;Tecnología;Gasto;Operaciones;27.016.000,00;24.704.658,55
+2025-08;Servicios públicos;Gasto;Operaciones;11.052.000,00;12.464.603,47
+2025-08;Transporte;Gasto;Operaciones;18.420.000,00;17.708.770,15
+2025-09;Ingresos por ventas;Ingreso;Comercial;520.800.000,00;537.401.004,58
+2025-09;Nómina;Gasto;Administración;223.200.000,00;237.288.573,33
+2025-09;Arriendo;Gasto;Administración;39.680.000,00;38.435.842,12
+2025-09;Marketing digital;Gasto;Comercial;34.720.000,00;36.118.419,34
+2025-09;Tecnología;Gasto;Operaciones;27.280.000,00;23.195.873,84
+2025-09;Servicios públicos;Gasto;Operaciones;11.160.000,00;9.361.928,57
+2025-09;Transporte;Gasto;Operaciones;18.600.000,00;18.091.123,57
+2025-10;Ingresos por ventas;Ingreso;Comercial;525.840.000,00;449.297.919,72
+2025-10;Nómina;Gasto;Administración;225.360.000,00;195.166.971,26
+2025-10;Arriendo;Gasto;Administración;40.064.000,00;35.615.847,58
+2025-10;Marketing digital;Gasto;Comercial;35.056.000,00;32.678.011,83
+2025-10;Tecnología;Gasto;Operaciones;27.544.000,00;25.429.209,14
+2025-10;Servicios públicos;Gasto;Operaciones;11.268.000,00;11.230.830,71
+2025-10;Transporte;Gasto;Operaciones;18.780.000,00;16.526.633,61
+2025-11;Ingresos por ventas;Ingreso;Comercial;530.880.000,00;565.005.263,65
+2025-11;Nómina;Gasto;Administración;227.520.000,00;239.009.802,47
+2025-11;Arriendo;Gasto;Administración;40.448.000,00;38.019.449,91
+2025-11;Marketing digital;Gasto;Comercial;35.392.000,00;31.424.439,89
+2025-11;Tecnología;Gasto;Operaciones;27.808.000,00;28.583.055,08
+2025-11;Servicios públicos;Gasto;Operaciones;11.376.000,00;11.444.628,46
+2025-11;Transporte;Gasto;Operaciones;18.960.000,00;18.178.540,16
+2025-12;Ingresos por ventas;Ingreso;Comercial;535.920.000,00;506.615.636,80
+2025-12;Nómina;Gasto;Administración;229.680.000,00;230.538.435,75
+2025-12;Arriendo;Gasto;Administración;40.832.000,00;40.530.664,35
+2025-12;Marketing digital;Gasto;Comercial;35.728.000,00;32.767.670,26
+2025-12;Tecnología;Gasto;Operaciones;28.072.000,00;27.844.913,67
+2025-12;Servicios públicos;Gasto;Operaciones;11.484.000,00;11.967.597,22
+2025-12;Transporte;Gasto;Operaciones;19.140.000,00;19.745.720,04

@@ -1,0 +1,321 @@
+fecha_respuesta,ciudad,canal_atencion,edad,tiempo_espera_min,calificacion,recomendaria,comentario
+2025-04-07,Medellín,Teléfono,,19,5,Sí,
+2025-03-05,Bogotá,Teléfono,60,8,5,Sí,
+2025-07-29,Bogotá,Chat,58,17,5,No,
+2025-09-17,Bucaramanga,Teléfono,72,11,5,Sí,Excelente servicio
+2025-06-25,Cali,Presencial,74,43,2,No,Buena atención
+2025-08-23,Medellín,Chat,34,44,3,No,Buena atención
+2025-04-28,Bogotá,Correo,43,29,4,Sí,Demora en la respuesta
+2025-04-02,Cali,Teléfono,41,41,2,Sí,
+2025-04-24,Medellín,Correo,29,35,3,Sí,Demora en la respuesta
+2025-05-13,Medellín,Presencial,32,24,3,No,
+2025-04-08,Medellín,Chat,21,10,5,Sí,Buena atención
+2025-07-15,Bogotá,Presencial,22,9,5,Sí,Buena atención
+2025-08-21,Bogotá,Presencial,61,33,3,No,Excelente servicio
+2025-05-31,Pereira,Presencial,21,19,3,No,
+2025-04-21,Medellín,Presencial,27,11,5,No,Volvería a comprar
+2025-08-02,Bogotá,Presencial,60,18,4,Sí,
+2025-05-28,Medellín,Teléfono,67,35,3,No,El producto llegó tarde
+2025-04-23,Medellín,Presencial,32,8,4,Sí,
+2025-04-13,Medellín,Correo,28,28,3,No,Excelente servicio
+2025-03-24,Bogotá,Presencial,54,11,4,Sí,El producto llegó tarde
+2025-07-23,Medellín,Presencial,29,42,3,No,
+2025-04-09,Bogotá,Chat,57,25,4,Sí,Buena atención
+2025-06-24,Medellín,Chat,72,27,3,No,
+2025-09-05,Bogotá,Presencial,22,30,3,Sí,Buena atención
+2025-05-02,Medellín,Presencial,63,35,2,No,El producto llegó tarde
+2025-06-23,Bogotá,Teléfono,63,11,4,Sí,Demora en la respuesta
+2025-03-28,Medellín,Correo,50,3,4,Sí,Excelente servicio
+2025-09-17,Bogotá,Teléfono,43,45,2,No,Buena atención
+2025-04-24,Pereira,Correo,51,41,3,No,
+2025-07-05,Bogotá,Teléfono,45,18,4,Sí,
+2025-03-07,Bogotá,Correo,30,9,5,Sí,Volvería a comprar
+2025-03-13,Bogotá,Teléfono,58,26,3,Sí,Excelente servicio
+2025-06-05,Medellín,Correo,33,12,4,Sí,Excelente servicio
+2025-03-24,Medellín,Chat,69,37,3,No,
+2025-04-14,Pereira,Teléfono,68,12,5,Sí,Buena atención
+2025-05-28,Bogotá,Chat,64,26,3,No,
+2025-07-26,Bogotá,Teléfono,34,14,4,Sí,Volvería a comprar
+2025-03-20,Bogotá,Chat,69,11,5,Sí,Buena atención
+2025-07-11,Bogotá,Presencial,60,45,3,No,Volvería a comprar
+2025-08-29,Medellín,Chat,22,17,4,No,Volvería a comprar
+2025-09-01,Bogotá,Presencial,34,13,5,Sí,Excelente servicio
+2025-08-22,Bogotá,Chat,25,33,3,No,El producto llegó tarde
+2025-09-10,Pereira,Chat,35,29,2,No,Demora en la respuesta
+2025-07-09,Medellín,Teléfono,53,1,5,Sí,
+2025-08-15,Bogotá,Correo,46,45,2,No,Volvería a comprar
+2025-07-17,Bogotá,Teléfono,66,15,3,No,El producto llegó tarde
+2025-05-27,Pereira,Teléfono,35,41,3,Sí,
+2025-06-19,Bucaramanga,Teléfono,39,18,5,Sí,Volvería a comprar
+2025-09-13,Bogotá,Chat,46,7,5,Sí,
+2025-08-04,Cali,Teléfono,24,9,5,Sí,Volvería a comprar
+2025-06-23,Bogotá,Teléfono,66,28,2,No,Demora en la respuesta
+2025-08-09,Cali,Presencial,18,9,4,Sí,
+2025-03-26,Bogotá,Correo,20,9,4,Sí,Volvería a comprar
+2025-06-28,Medellín,Teléfono,,15,4,Sí,Volvería a comprar
+2025-03-02,Pereira,Correo,64,18,4,No,
+2025-07-04,Bogotá,Correo,50,43,3,No,Demora en la respuesta
+2025-03-14,Medellín,Chat,25,27,3,No,
+2025-05-03,Medellín,Correo,68,32,3,No,Excelente servicio
+2025-08-13,Bogotá,Teléfono,54,8,5,Sí,Buena atención
+2025-03-17,Bogotá,Teléfono,39,39,2,Sí,
+2025-05-04,Medellín,Teléfono,22,42,2,No,
+2025-05-25,Bogotá,Correo,25,7,5,Sí,
+2025-08-25,Bogotá,Teléfono,24,38,2,No,
+2025-06-25,Bogotá,Presencial,33,9,4,Sí,Demora en la respuesta
+2025-08-21,Pereira,Teléfono,73,3,5,No,Excelente servicio
+2025-05-19,Bogotá,Correo,63,13,4,Sí,
+2025-06-20,Bogotá,Presencial,39,25,3,No,
+2025-03-20,Bucaramanga,Presencial,62,4,5,Sí,
+2025-03-01,Medellín,Chat,73,42,2,No,Excelente servicio
+2025-06-20,Bogotá,Correo,53,43,1,Sí,Excelente servicio
+2025-08-17,Bogotá,Correo,68,44,2,No,Volvería a comprar
+2025-09-06,Bogotá,Chat,64,5,5,Sí,Volvería a comprar
+2025-07-06,Cali,Correo,47,17,4,Sí,
+2025-03-08,Medellín,Correo,34,35,2,Sí,Volvería a comprar
+2025-03-28,Bogotá,Teléfono,21,27,4,Sí,
+2025-08-10,Bogotá,Presencial,22,24,3,No,
+2025-07-13,Bucaramanga,Chat,26,22,4,Sí,Volvería a comprar
+2025-08-10,Medellín,Correo,57,37,2,Sí,Demora en la respuesta
+2025-09-04,Medellín,Chat,73,6,5,Sí,El producto llegó tarde
+2025-07-11,Bogotá,Chat,55,24,3,No,
+2025-03-18,Medellín,Presencial,57,13,4,Sí,Buena atención
+2025-06-30,Bogotá,Presencial,60,4,5,Sí,
+2025-05-25,Medellín,Teléfono,48,5,5,Sí,Excelente servicio
+2025-09-16,Medellín,Correo,67,41,2,No,
+2025-03-15,Bogotá,Presencial,27,31,2,No,
+2025-08-28,Medellín,Chat,41,1,5,No,
+2025-05-08,Medellín,Chat,23,45,1,No,
+2025-06-28,Cali,Presencial,22,3,5,No,Volvería a comprar
+2025-07-21,Bogotá,Presencial,58,13,4,Sí,El producto llegó tarde
+2025-03-29,Bogotá,Correo,71,25,4,No,
+2025-09-16,Bogotá,Teléfono,30,10,4,Sí,
+2025-05-11,Bogotá,Correo,58,16,3,No,Excelente servicio
+2025-04-14,Bogotá,Chat,23,7,4,Sí,
+2025-07-02,Bogotá,Chat,33,8,5,Sí,Excelente servicio
+2025-06-10,Bucaramanga,Teléfono,73,32,3,No,
+2025-07-24,Medellín,Presencial,35,28,3,No,Excelente servicio
+2025-05-03,Medellín,Correo,32,38,3,No,
+2025-08-13,Bogotá,Presencial,27,16,4,Sí,
+2025-08-07,Bogotá,Chat,48,28,4,Sí,Buena atención
+2025-03-01,Bogotá,Teléfono,18,44,2,No,
+2025-07-05,Cali,Presencial,63,35,3,No,Excelente servicio
+2025-07-29,Medellín,Chat,38,39,2,No,Buena atención
+2025-04-12,Bogotá,Presencial,25,41,2,No,Buena atención
+2025-08-07,Bogotá,Presencial,30,4,5,Sí,
+2025-03-20,Bogotá,Teléfono,31,16,3,No,
+2025-03-14,Bucaramanga,Presencial,72,6,5,Sí,
+2025-07-22,Medellín,Correo,,11,4,Sí,Buena atención
+2025-07-25,Bogotá,Chat,20,13,4,Sí,
+2025-06-03,Medellín,Presencial,60,38,2,No,Buena atención
+2025-06-23,Bogotá,Correo,59,13,3,No,Demora en la respuesta
+2025-08-13,Medellín,Teléfono,49,30,3,No,Excelente servicio
+2025-06-18,Bogotá,Teléfono,41,39,3,No,Buena atención
+2025-07-30,Bogotá,Teléfono,74,38,3,No,Excelente servicio
+2025-05-20,Bogotá,Chat,21,5,4,Sí,Excelente servicio
+2025-05-06,Pereira,Correo,26,19,4,Sí,
+2025-08-15,Bogotá,Presencial,70,22,4,Sí,
+2025-06-14,Cali,Chat,45,45,1,No,El producto llegó tarde
+2025-03-20,Bogotá,Presencial,21,13,5,Sí,Excelente servicio
+2025-09-08,Bogotá,Chat,70,44,2,No,
+2025-08-16,Medellín,Correo,37,17,4,Sí,
+2025-04-26,Cali,Teléfono,63,15,4,Sí,Buena atención
+2025-03-07,Bogotá,Chat,41,37,3,No,Demora en la respuesta
+2025-08-30,Medellín,Chat,24,10,5,Sí,Demora en la respuesta
+2025-05-02,Bogotá,Chat,30,43,2,No,Volvería a comprar
+2025-08-11,Bogotá,Teléfono,33,34,3,No,
+2025-03-05,Medellín,Correo,30,25,3,No,Volvería a comprar
+2025-06-07,Bogotá,Chat,28,42,2,No,Demora en la respuesta
+2025-07-11,Medellín,Teléfono,49,10,5,No,Buena atención
+2025-06-21,Cali,Correo,73,32,3,Sí,
+2025-05-09,Bucaramanga,Presencial,73,20,4,Sí,Volvería a comprar
+2025-08-14,Medellín,Chat,66,25,4,Sí,Excelente servicio
+2025-07-10,Bogotá,Chat,22,16,4,Sí,
+2025-04-28,Medellín,Presencial,71,39,2,No,Demora en la respuesta
+2025-05-10,Cali,Teléfono,49,32,3,No,
+2025-06-02,Bogotá,Chat,69,45,3,Sí,Excelente servicio
+2025-09-14,Bogotá,Presencial,35,32,4,Sí,Excelente servicio
+2025-09-11,Cali,Correo,72,39,2,No,El producto llegó tarde
+2025-08-18,Medellín,Presencial,58,2,4,Sí,
+2025-05-24,Bucaramanga,Teléfono,37,30,4,Sí,Volvería a comprar
+2025-08-24,Bogotá,Chat,23,5,5,Sí,
+2025-03-13,Bogotá,Teléfono,69,17,4,Sí,
+2025-03-16,Bogotá,Chat,18,25,4,Sí,Buena atención
+2025-05-28,Bogotá,Chat,38,7,4,Sí,Excelente servicio
+2025-07-03,Cali,Chat,75,18,4,Sí,Excelente servicio
+2025-04-06,Medellín,Chat,42,34,3,No,Demora en la respuesta
+2025-03-01,Bogotá,Presencial,30,16,4,Sí,
+2025-05-02,Bogotá,Correo,20,15,3,Sí,
+2025-07-11,Bogotá,Chat,64,25,3,Sí,Excelente servicio
+2025-04-18,Medellín,Presencial,41,20,4,Sí,El producto llegó tarde
+2025-06-09,Medellín,Chat,20,27,3,No,
+2025-03-02,Bogotá,Correo,53,3,5,Sí,El producto llegó tarde
+2025-07-19,Medellín,Chat,44,31,2,No,
+2025-04-15,Bogotá,Correo,33,25,4,Sí,Demora en la respuesta
+2025-06-18,Bogotá,Correo,46,30,4,Sí,Excelente servicio
+2025-05-18,Bucaramanga,Teléfono,30,30,4,Sí,
+2025-07-23,Medellín,Presencial,66,29,4,Sí,
+2025-04-10,Medellín,Correo,56,2,5,Sí,
+2025-04-03,Medellín,Correo,54,30,3,No,Demora en la respuesta
+2025-04-13,Bogotá,Chat,67,17,4,Sí,Demora en la respuesta
+2025-08-07,Cali,Correo,,45,3,No,Demora en la respuesta
+2025-07-10,Bogotá,Presencial,63,8,5,Sí,El producto llegó tarde
+2025-06-16,Medellín,Correo,69,13,4,Sí,
+2025-08-16,Medellín,Chat,66,20,4,Sí,Demora en la respuesta
+2025-05-16,Bogotá,Presencial,62,29,3,No,
+2025-07-06,Cali,Chat,39,29,4,Sí,
+2025-03-08,Bogotá,Presencial,62,19,3,No,Demora en la respuesta
+2025-06-14,Cali,Chat,57,21,3,No,
+2025-03-12,Bucaramanga,Chat,20,11,4,Sí,Volvería a comprar
+2025-08-08,Medellín,Teléfono,41,13,4,Sí,
+2025-07-26,Bogotá,Teléfono,70,1,5,Sí,
+2025-09-12,Medellín,Correo,70,33,3,No,Buena atención
+2025-04-10,Cali,Correo,71,9,4,Sí,
+2025-03-16,Bogotá,Chat,35,30,3,No,
+2025-06-19,Bogotá,Teléfono,30,37,2,No,Volvería a comprar
+2025-09-12,Bogotá,Teléfono,21,9,4,Sí,Buena atención
+2025-06-11,Bogotá,Correo,36,2,5,Sí,Excelente servicio
+2025-04-05,Bucaramanga,Correo,25,19,3,No,
+2025-03-13,Bogotá,Presencial,53,24,3,No,Volvería a comprar
+2025-07-07,Bogotá,Chat,20,26,4,Sí,
+2025-07-18,Pereira,Chat,67,5,4,Sí,
+2025-04-15,Pereira,Teléfono,37,24,4,Sí,Demora en la respuesta
+2025-06-03,Bogotá,Presencial,52,18,5,Sí,Demora en la respuesta
+2025-08-19,Bogotá,Correo,30,34,2,No,Excelente servicio
+2025-09-17,Bucaramanga,Chat,41,40,3,Sí,
+2025-07-12,Medellín,Correo,61,23,4,No,Buena atención
+2025-09-04,Bogotá,Presencial,28,28,3,No,El producto llegó tarde
+2025-07-30,Medellín,Chat,23,29,2,No,Excelente servicio
+2025-08-02,Bogotá,Correo,28,30,3,Sí,
+2025-08-02,Pereira,Teléfono,28,14,5,Sí,Buena atención
+2025-09-15,Pereira,Chat,37,25,3,No,Excelente servicio
+2025-03-17,Pereira,Chat,18,38,2,No,Buena atención
+2025-09-11,Bogotá,Correo,37,36,3,No,
+2025-03-13,Bogotá,Chat,24,17,3,No,
+2025-03-12,Bogotá,Presencial,37,11,5,Sí,Excelente servicio
+2025-03-28,Bogotá,Chat,43,45,1,No,Buena atención
+2025-07-19,Medellín,Presencial,29,9,4,Sí,El producto llegó tarde
+2025-03-31,Bogotá,Chat,29,22,4,No,
+2025-04-03,Bogotá,Presencial,54,25,3,No,
+2025-03-15,Medellín,Presencial,36,5,5,Sí,Buena atención
+2025-08-03,Medellín,Presencial,22,2,5,Sí,Volvería a comprar
+2025-05-31,Medellín,Teléfono,62,39,3,No,El producto llegó tarde
+2025-08-13,Bogotá,Correo,22,28,3,No,Excelente servicio
+2025-04-06,Cali,Presencial,61,21,4,Sí,Buena atención
+2025-07-01,Bogotá,Chat,59,43,3,No,Buena atención
+2025-03-23,Bogotá,Teléfono,66,30,4,Sí,Excelente servicio
+2025-03-29,Bogotá,Presencial,49,23,3,No,
+2025-03-31,Bogotá,Correo,68,34,3,Sí,Demora en la respuesta
+2025-08-12,Bogotá,Chat,65,8,5,Sí,Demora en la respuesta
+2025-06-07,Pereira,Presencial,19,39,2,No,Excelente servicio
+2025-04-02,Medellín,Presencial,35,16,4,Sí,Demora en la respuesta
+2025-03-08,Bogotá,Teléfono,41,35,2,No,Excelente servicio
+2025-04-02,Cali,Chat,50,7,5,Sí,
+2025-06-22,Bogotá,Teléfono,,18,4,Sí,Buena atención
+2025-03-02,Medellín,Correo,51,42,3,No,Buena atención
+2025-06-11,Medellín,Presencial,25,1,4,Sí,
+2025-04-04,Medellín,Presencial,44,35,2,No,El producto llegó tarde
+2025-05-28,Bogotá,Teléfono,49,29,3,No,Excelente servicio
+2025-09-12,Cali,Presencial,33,5,5,Sí,
+2025-06-30,Medellín,Teléfono,51,13,5,Sí,El producto llegó tarde
+2025-05-31,Bucaramanga,Correo,42,13,5,No,El producto llegó tarde
+2025-06-18,Cali,Chat,50,34,2,Sí,Volvería a comprar
+2025-07-04,Cali,Teléfono,67,9,4,Sí,El producto llegó tarde
+2025-08-12,Bogotá,Teléfono,25,16,4,Sí,
+2025-05-20,Bogotá,Presencial,65,36,2,No,Excelente servicio
+2025-04-08,Bucaramanga,Teléfono,41,5,5,Sí,El producto llegó tarde
+2025-06-04,Bogotá,Presencial,49,43,2,No,Excelente servicio
+2025-04-09,Bucaramanga,Chat,51,28,3,Sí,Demora en la respuesta
+2025-06-14,Medellín,Teléfono,19,44,1,No,
+2025-03-20,Medellín,Presencial,75,40,3,No,
+2025-07-22,Bogotá,Teléfono,22,15,4,Sí,Volvería a comprar
+2025-08-22,Bogotá,Chat,23,9,5,Sí,
+2025-06-01,Medellín,Presencial,36,33,3,No,El producto llegó tarde
+2025-06-15,Medellín,Teléfono,46,43,2,No,El producto llegó tarde
+2025-07-03,Bogotá,Correo,46,44,3,Sí,Demora en la respuesta
+2025-07-27,Medellín,Correo,34,1,4,No,Demora en la respuesta
+2025-06-02,Bogotá,Correo,24,29,3,No,
+2025-05-20,Bogotá,Correo,72,26,4,Sí,El producto llegó tarde
+2025-04-22,Bogotá,Correo,24,42,3,No,Excelente servicio
+2025-08-07,Cali,Teléfono,43,38,3,Sí,Buena atención
+2025-04-08,Medellín,Presencial,67,16,4,Sí,
+2025-03-20,Medellín,Teléfono,27,38,3,No,Demora en la respuesta
+2025-05-07,Bogotá,Presencial,35,43,2,No,Buena atención
+2025-07-01,Bogotá,Correo,48,42,2,No,
+2025-08-22,Bogotá,Teléfono,33,12,4,Sí,
+2025-07-03,Bogotá,Teléfono,72,10,4,Sí,Volvería a comprar
+2025-06-14,Cali,Teléfono,56,10,5,Sí,El producto llegó tarde
+2025-09-11,Medellín,Teléfono,32,45,2,Sí,
+2025-08-23,Medellín,Presencial,51,34,3,No,El producto llegó tarde
+2025-05-07,Cali,Chat,55,14,4,Sí,Buena atención
+2025-03-22,Bogotá,Chat,65,20,4,Sí,Volvería a comprar
+2025-06-21,Cali,Presencial,56,17,4,Sí,
+2025-04-30,Bucaramanga,Teléfono,20,26,4,Sí,Demora en la respuesta
+2025-07-18,Bogotá,Correo,36,7,5,Sí,Buena atención
+2025-07-09,Medellín,Teléfono,27,24,4,Sí,
+2025-07-04,Bogotá,Chat,39,16,4,Sí,
+2025-08-17,Medellín,Chat,73,35,3,No,
+2025-09-04,Bucaramanga,Chat,54,19,4,Sí,Volvería a comprar
+2025-07-31,Medellín,Presencial,38,38,2,No,Demora en la respuesta
+2025-03-20,Bucaramanga,Chat,59,3,4,Sí,
+2025-04-25,Medellín,Teléfono,70,9,5,Sí,Excelente servicio
+2025-07-05,Bucaramanga,Chat,62,20,4,Sí,
+2025-08-04,Bogotá,Teléfono,41,28,3,No,Demora en la respuesta
+2025-07-23,Cali,Correo,73,27,4,Sí,
+2025-03-25,Medellín,Correo,42,44,2,No,Buena atención
+2025-05-31,Cali,Teléfono,55,25,3,No,Excelente servicio
+2025-04-04,Cali,Correo,,23,4,Sí,
+2025-03-08,Medellín,Correo,24,37,3,No,Excelente servicio
+2025-08-08,Medellín,Chat,69,28,4,Sí,El producto llegó tarde
+2025-04-24,Bogotá,Chat,60,2,5,Sí,
+2025-05-18,Bogotá,Chat,22,38,2,Sí,El producto llegó tarde
+2025-04-14,Medellín,Correo,65,13,4,Sí,Buena atención
+2025-08-20,Bogotá,Presencial,31,26,4,Sí,Volvería a comprar
+2025-04-06,Medellín,Presencial,54,45,3,No,
+2025-07-25,Bucaramanga,Presencial,28,44,2,No,Volvería a comprar
+2025-08-06,Medellín,Chat,18,39,2,No,Demora en la respuesta
+2025-04-07,Medellín,Presencial,33,20,4,Sí,Demora en la respuesta
+2025-03-24,Medellín,Correo,61,33,2,No,Demora en la respuesta
+2025-04-10,Bogotá,Correo,35,5,5,No,Volvería a comprar
+2025-05-05,Bogotá,Correo,50,30,4,Sí,
+2025-04-06,Medellín,Teléfono,47,4,4,Sí,Excelente servicio
+2025-03-21,Medellín,Chat,60,17,4,Sí,Excelente servicio
+2025-06-25,Cali,Presencial,64,9,5,Sí,Volvería a comprar
+2025-05-30,Bucaramanga,Correo,68,40,2,No,Volvería a comprar
+2025-07-21,Cali,Correo,75,21,4,Sí,El producto llegó tarde
+2025-05-12,Bogotá,Correo,53,35,2,No,
+2025-07-27,Medellín,Teléfono,22,8,5,Sí,Excelente servicio
+2025-05-15,Bucaramanga,Presencial,40,5,4,Sí,Buena atención
+2025-08-19,Cali,Correo,70,9,5,Sí,Volvería a comprar
+2025-07-10,Bogotá,Teléfono,38,41,3,No,El producto llegó tarde
+2025-03-17,Medellín,Correo,52,3,4,Sí,Excelente servicio
+2025-07-05,Bogotá,Presencial,63,27,3,Sí,Demora en la respuesta
+2025-07-31,Medellín,Chat,66,43,2,No,
+2025-08-03,Bogotá,Presencial,57,34,3,No,El producto llegó tarde
+2025-08-06,Bogotá,Presencial,63,6,5,No,
+2025-06-06,Cali,Presencial,33,23,3,No,Volvería a comprar
+2025-07-03,Medellín,Teléfono,60,27,3,Sí,Buena atención
+2025-06-03,Medellín,Chat,51,11,4,Sí,Buena atención
+2025-07-08,Medellín,Teléfono,66,29,2,No,El producto llegó tarde
+2025-04-10,Bucaramanga,Correo,73,2,4,Sí,El producto llegó tarde
+2025-04-13,Bogotá,Presencial,69,30,3,No,Demora en la respuesta
+2025-06-19,Pereira,Chat,73,2,4,Sí,
+2025-06-14,Bogotá,Presencial,43,32,3,Sí,Buena atención
+2025-03-18,Bogotá,Chat,46,2,5,No,Buena atención
+2025-09-03,Bogotá,Chat,63,7,5,Sí,Volvería a comprar
+2025-03-29,Bogotá,Chat,58,24,3,No,El producto llegó tarde
+2025-05-04,Bogotá,Correo,35,4,4,Sí,Volvería a comprar
+2025-08-16,Pereira,Teléfono,33,14,4,No,
+2025-07-07,Bucaramanga,Presencial,49,35,3,No,El producto llegó tarde
+2025-04-30,Pereira,Teléfono,61,17,3,No,Excelente servicio
+2025-03-25,Bogotá,Chat,46,12,4,Sí,
+2025-04-20,Medellín,Chat,67,37,2,No,
+2025-09-08,Medellín,Teléfono,56,15,4,Sí,Excelente servicio
+2025-08-14,Cali,Chat,52,43,2,No,Buena atención
+2025-05-01,Medellín,Presencial,30,40,3,Sí,Volvería a comprar
+2025-07-06,Bogotá,Presencial,58,38,3,No,
+2025-08-08,Bogotá,Presencial,71,26,3,No,Volvería a comprar
+2025-06-05,Pereira,Teléfono,64,11,4,Sí,
+2025-03-28,Medellín,Teléfono,35,23,3,No,El producto llegó tarde
+2025-05-05,Bogotá,Correo,,31,3,Sí,
+2025-08-20,Medellín,Teléfono,52,28,3,No,El producto llegó tarde

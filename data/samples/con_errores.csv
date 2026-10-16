@@ -1,0 +1,10 @@
+producto,cantidad,precio,fecha,activo
+Lápiz,10,1500,2025-01-10,sí
+Borrador,abc,800,2025-01-11,no
+Regla,,2500,fecha-mala,sí
+Lápiz,10,1500,2025-01-10,sí
+=HYPERLINK("http://ejemplo"),5,100,2025-01-12,no
+Cuaderno,7,9000,2025-01-13,
+Tijeras,3,99999999,2025-01-14,sí
+Pegante,4,3200,2025-01-15,no
+Marcador,6,2800,2025-01-16,sí

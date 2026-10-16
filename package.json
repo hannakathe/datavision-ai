@@ -1,0 +1,30 @@
+{
+  "name": "datavision-ai",
+  "version": "1.0.0",
+  "description": "DataVision AI: generador de dashboards inteligentes a partir de datos empresariales variables (taller académico UMB).",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "import": "node scripts/cli.js import",
+    "cli": "node scripts/cli.js",
+    "seed": "node scripts/cli.js seed",
+    "demo:generate": "node scripts/generate-demo.js",
+    "test": "node --no-warnings --test --test-concurrency=1 \"test/**/*.test.js\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "exceljs": "^4.4.0",
+    "express": "^5.3.0",
+    "multer": "^2.4.0",
+    "papaparse": "^5.7.0"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
