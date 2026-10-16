@@ -3,3 +3,4 @@ storage/
 *.log
 .env
 test/.tmp/
+dist/

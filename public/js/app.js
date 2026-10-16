@@ -7,11 +7,14 @@ import { datasetsView } from './views/datasets.js';
 import { detailView } from './views/detail.js';
 import { dashboardView, destroyCharts } from './views/dashboard.js';
 import { lastDatasetId } from './state.js';
+import { consoleView } from './views/console.js';
+import { api } from './api.js';
 
 const ROUTES = [
   { path: '', title: 'Inicio', nav: 'Inicio', icon: 'home', view: homeView },
   { path: 'importar', title: 'Importar datos', nav: 'Importar datos', icon: 'upload', view: importView },
   { path: 'editor', title: 'Editor manual', nav: 'Editor manual', icon: 'table', view: editorView },
+  { path: 'consola', title: 'Consola de datos', nav: 'Consola de datos', icon: 'code', view: consoleView },
   { path: 'conjuntos', title: 'Conjuntos de datos', nav: 'Conjuntos de datos', icon: 'db', view: datasetsView },
   { path: 'conjunto', title: 'Detalle y validación', view: detailView, parent: 'conjuntos' },
   { path: 'dashboard', title: 'Dashboard', nav: 'Dashboard', icon: 'chart', view: (m, p) => dashboardView(m, p) },
@@ -53,5 +56,13 @@ document.getElementById('menu-btn').addEventListener('click', () => {
   document.getElementById('menu-btn').setAttribute('aria-expanded', String(open));
 });
 document.getElementById('menu-btn').append(icon('menu'));
+document.getElementById('storage-note').textContent = api.mode === 'server'
+  ? 'Datos almacenados localmente en SQLite (servidor Node).'
+  : 'Modo navegador: los datos se guardan solo en este navegador (IndexedDB).';
 window.addEventListener('hashchange', route);
-route();
+if (api.mode === 'browser') {
+  clear(main, h('div', { class: 'loading', role: 'status' }, h('span', { class: 'spinner', 'aria-hidden': 'true' }), 'Preparando los datos de demostración…'));
+  api.ensureSeed().catch((e) => console.error(e)).finally(route);
+} else {
+  route();
+}

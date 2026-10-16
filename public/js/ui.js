@@ -45,6 +45,7 @@ export function icon(name) {
     x: 'M6 6l12 12M18 6L6 18',
     gear: 'M4 6h9m4 0h3M4 12h3m4 0h9M4 18h11m4 0h1M15 4v4M9 10v4M17 16v4',
     menu: 'M4 6h16M4 12h16M4 18h16',
+    code: 'M4 5h16v14H4zM8 10l2 2-2 2M12 14h4',
     eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zm10-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6z',
     refresh: 'M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7',
     info: 'M12 8h.01M11 12h1v5h1M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z',

@@ -27,7 +27,7 @@ export async function homeView(main) {
       h('div', { class: 'hero-stats' },
         stat(fmtNumber(list.length), 'conjuntos de datos'),
         stat(fmtNumber(list.reduce((a, d) => a + d.rowCount, 0)), 'registros almacenados'),
-        stat('SQLite', 'persistencia local'))),
+        api.mode === 'server' ? stat('SQLite', 'persistencia local') : stat('Navegador', 'datos guardados en este equipo'))),
     h('section', { class: 'steps' }, steps.map(([ic, t, d]) => h('article', { class: 'card step' }, h('span', { class: 'step-icon' }, icon(ic)), h('h3', {}, t), h('p', { class: 'muted' }, d)))),
     h('section', { class: 'card' },
       h('div', { class: 'card-head' }, h('h3', {}, 'Conjuntos recientes'), h('a', { class: 'link-btn', href: '#/conjuntos' }, 'Gestionar todos →')),

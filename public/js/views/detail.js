@@ -17,6 +17,18 @@ const STRATEGIES = {
 
 export const EDITOR_MAX_ROWS = 2000;
 
+async function downloadCsv(id) {
+  try {
+    const { name, csv } = await api.exportCsv(id);
+    const url = URL.createObjectURL(new Blob(['﻿', csv], { type: 'text/csv;charset=utf-8' }));
+    const a = h('a', { href: url, download: `${name.replace(/[^w-áéíóúñÁÉÍÓÚÑ ]+/g, '').trim().replace(/s+/g, '_') || 'datos'}.csv` });
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
 export async function detailView(main, params) {
   clear(main, loading());
   const id = Number(params.id);
@@ -46,7 +58,7 @@ export async function detailView(main, params) {
         h('a', { class: 'btn btn-primary', href: `#/dashboard/${id}` }, icon('chart'), 'Abrir dashboard'),
         meta.rowCount <= EDITOR_MAX_ROWS ? h('a', { class: 'btn btn-ghost', href: `#/editor/${id}` }, icon('table'), 'Editar datos') : null,
         h('button', { type: 'button', class: 'btn btn-ghost', onclick: async () => { if (await renameDataset(meta)) detailView(main, params); } }, icon('edit'), 'Renombrar'),
-        h('a', { class: 'btn btn-ghost', href: `/api/datasets/${id}/export.csv`, download: '' }, icon('download'), 'Exportar CSV'),
+        h('button', { type: 'button', class: 'btn btn-ghost', onclick: () => downloadCsv(id) }, icon('download'), 'Exportar CSV'),
         h('button', { type: 'button', class: 'btn btn-danger-ghost', onclick: async () => { if (await deleteDataset(meta)) location.hash = '#/conjuntos'; } }, icon('trash'), 'Eliminar'))),
     h('section', { class: 'card' }, h('h3', {}, 'Validación y calidad'), issuesList(v)),
     h('section', { class: 'card' }, h('h3', {}, 'Esquema detectado'), h('p', { class: 'muted small' }, 'Si un tipo no es correcto (p. ej., un código numérico que debería ser categoría), cámbialo aquí; los cálculos y el dashboard se adaptan.'),

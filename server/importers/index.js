@@ -13,6 +13,7 @@ export const IMPORTERS = [
   { id: 'xlsx', label: 'Libro de Excel (.xlsx)', extensions: ['.xlsx'], status: 'disponible', parse: parseXlsx },
   { id: 'sqlite', label: 'Base de datos SQLite (archivo .db/.sqlite)', extensions: ['.db', '.sqlite', '.sqlite3'], status: 'disponible', parse: parseSqliteBuffer },
   { id: 'manual', label: 'Editor manual en la interfaz', extensions: [], status: 'disponible' },
+  { id: 'console', label: 'Consola de datos en la interfaz', extensions: [], status: 'disponible' },
   { id: 'cli', label: 'Consola de Node.js (npm run import)', extensions: [], status: 'disponible' },
   { id: 'rest', label: 'API REST', extensions: [], status: 'planificado' },
   { id: 'sql-server', label: 'PostgreSQL / MySQL / SQL Server', extensions: [], status: 'planificado' },

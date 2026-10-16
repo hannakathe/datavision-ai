@@ -19,6 +19,9 @@ export function createApp(store) {
   app.use(express.json({ limit: '10mb' }));
   app.use('/api', apiRouter(store));
   app.use('/vendor/chart.js', express.static(path.join(ROOT, 'node_modules', 'chart.js', 'dist')));
+  app.use('/vendor/papaparse', express.static(path.join(ROOT, 'node_modules', 'papaparse')));
+  app.use('/vendor/exceljs', express.static(path.join(ROOT, 'node_modules', 'exceljs', 'dist')));
+  app.use('/data/demo', express.static(path.join(ROOT, 'data', 'demo')));
   app.use(express.static(path.join(ROOT, 'public'), { extensions: ['html'] }));
   app.use(errorHandler);
   return app;

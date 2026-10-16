@@ -6,22 +6,13 @@ import Papa from 'papaparse';
 import { badRequest, notFound } from '../errors.js';
 import { parseFile } from '../importers/index.js';
 import { buildDataset, revalidate } from './ingest.js';
-import { TYPES, isMissing, convertValue } from '../../public/js/core/types.js';
-import { rowKey } from '../../public/js/core/quality.js';
+import { cleanRows } from '../../public/js/core/clean.js';
+import { textField, requireName, manualDataset, applyColumnTypes, cleanedDataset } from '../../public/js/core/manage.js';
+import { config } from '../config.js';
 import { prepare, applyFilters } from '../../public/js/core/data.js';
-import { mean, median } from '../../public/js/core/stats.js';
 
-const text = (v, max, field) => {
-  if (v === undefined || v === null) return undefined;
-  if (typeof v !== 'string') throw badRequest(`El campo «${field}» debe ser texto.`);
-  return v.trim().slice(0, max);
-};
-
-export function requireName(name) {
-  const n = text(name, 120, 'nombre');
-  if (!n) throw badRequest('El nombre del conjunto de datos es obligatorio.');
-  return n;
-}
+const text = textField;
+export { requireName };
 
 // ---------- Vista previa de archivos (caché temporal en memoria) ----------
 const previews = new Map();
@@ -80,21 +71,7 @@ export async function importFromPath(store, file, { name, description = '', shee
 }
 
 // ---------- Entrada manual ----------
-function parseManualPayload(body) {
-  if (!Array.isArray(body?.columns) || !body.columns.length) throw badRequest('Define al menos una columna.');
-  const columns = body.columns.map((c) => (typeof c === 'string' ? c : ''));
-  if (columns.some((c) => !c.trim())) throw badRequest('Todas las columnas deben tener nombre.');
-  const lower = columns.map((c) => c.trim().toLowerCase());
-  if (new Set(lower).size !== lower.length) throw badRequest('Hay nombres de columna repetidos.');
-  if (!Array.isArray(body.rows)) throw badRequest('Las filas deben enviarse como una lista.');
-  const rows = body.rows.map((r) => {
-    if (!Array.isArray(r)) throw badRequest('Cada fila debe ser una lista de valores.');
-    return r.map((v) => (v === null || v === undefined ? null : typeof v === 'number' || typeof v === 'boolean' ? v : String(v)));
-  });
-  const ds = buildDataset({ columns, rows });
-  if (!ds.rows.length) throw badRequest('Agrega al menos una fila con datos.');
-  return ds;
-}
+const parseManualPayload = (body) => manualDataset(body, config);
 
 export function createManual(store, body) {
   const ds = parseManualPayload(body);
@@ -123,79 +100,18 @@ export function updateDataset(store, id, body) {
     store.updateMeta(id, { name: body.name !== undefined ? requireName(body.name) : undefined, description: text(body.description, 500, 'descripción') });
   }
   if (body.columnTypes !== undefined) {
-    if (!body.columnTypes || typeof body.columnTypes !== 'object') throw badRequest('columnTypes debe ser un objeto {columna: tipo}.');
-    const schema = structuredClone(d.schema);
-    for (const [colName, type] of Object.entries(body.columnTypes)) {
-      const col = schema.columns.find((c) => c.name === colName);
-      if (!col) throw badRequest(`La columna «${colName}» no existe.`);
-      if (!TYPES.includes(type)) throw badRequest(`Tipo «${type}» no válido. Tipos: ${TYPES.join(', ')}.`);
-      col.type = type;
-      if (col.role !== 'identificador') col.role = { numerico: 'medida', fecha: 'tiempo', texto: 'atributo' }[type] || 'dimension';
-      col.discrete = type === 'numerico' && col.unique <= 12;
-    }
+    const schema = applyColumnTypes(d.schema, body.columnTypes);
     const rows = store.getRows(id);
     store.updateSchema(id, schema, revalidate(rows, schema, d.validation.importWarnings));
   }
   return store.getDataset(id);
 }
 
-const MISSING_STRATEGIES = ['drop', 'fill_value', 'fill_mean', 'fill_median', 'fill_mode'];
-
-export function cleanRows(rows, schema, { removeDuplicates = false, missing = [] } = {}) {
-  let out = rows.map((r) => ({ ...r }));
-  const report = [];
-  const columns = schema.columns.map((c) => c.name);
-  if (removeDuplicates) {
-    const seen = new Set();
-    const before = out.length;
-    out = out.filter((r) => { const k = rowKey(r, columns); if (seen.has(k)) return false; seen.add(k); return true; });
-    report.push(`Se eliminaron ${before - out.length} fila(s) duplicada(s).`);
-  }
-  if (!Array.isArray(missing)) throw badRequest('missing debe ser una lista de reglas.');
-  for (const rule of missing) {
-    const col = schema.columns.find((c) => c.name === rule?.column);
-    if (!col) throw badRequest(`La columna «${rule?.column}» no existe.`);
-    if (!MISSING_STRATEGIES.includes(rule.strategy)) throw badRequest(`Estrategia no válida para «${col.name}».`);
-    const name = col.name;
-    const missingCount = out.filter((r) => isMissing(r[name])).length;
-    if (!missingCount) continue;
-    if (rule.strategy === 'drop') {
-      out = out.filter((r) => !isMissing(r[name]));
-      report.push(`«${name}»: se eliminaron ${missingCount} fila(s) con valor vacío.`);
-      continue;
-    }
-    let fill;
-    if (rule.strategy === 'fill_value') {
-      fill = text(String(rule.value ?? ''), 200, 'valor');
-      if (!fill) throw badRequest(`Indica el valor de reemplazo para «${name}».`);
-    } else if (rule.strategy === 'fill_mode') {
-      const counts = new Map();
-      for (const r of out) if (!isMissing(r[name])) counts.set(r[name], (counts.get(r[name]) || 0) + 1);
-      fill = [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
-    } else {
-      if (col.type !== 'numerico') throw badRequest(`«${name}» no es numérica: no se puede usar promedio ni mediana.`);
-      const nums = out.map((r) => convertValue(r[name], 'numerico'));
-      const v = rule.strategy === 'fill_mean' ? mean(nums) : median(nums);
-      fill = v === null ? undefined : Math.round(v * 10000) / 10000;
-    }
-    if (fill === undefined) throw badRequest(`No hay valores en «${name}» para calcular el reemplazo.`);
-    for (const r of out) if (isMissing(r[name])) r[name] = fill;
-    report.push(`«${name}»: ${missingCount} valor(es) vacío(s) reemplazado(s) por ${JSON.stringify(fill)}.`);
-  }
-  return { rows: out, report };
-}
+export { cleanRows };
 
 export function cleanDataset(store, id, body = {}) {
   const d = mustGet(store, id);
-  const { rows, report } = cleanRows(store.getRows(id), d.schema, body);
-  if (!report.length) throw badRequest('Selecciona al menos una corrección para aplicar.');
-  const ds = buildDataset({ columns: d.columns, rows });
-  // Conserva los tipos que el usuario haya cambiado manualmente.
-  for (const col of ds.schema.columns) {
-    const prev = d.schema.columns.find((c) => c.name === col.name);
-    if (prev && prev.type !== prev.detectedType) col.type = prev.type;
-  }
-  ds.validation = revalidate(ds.rows, ds.schema, report);
+  const { ds, report } = cleanedDataset(d, store.getRows(id), body, config);
   if (body.mode === 'replace') {
     store.replaceData(id, ds);
     return { dataset: store.getDataset(id), report };

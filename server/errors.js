@@ -1,15 +1,7 @@
-// Errores con mensaje seguro para el usuario y middleware centralizado.
-export class AppError extends Error {
-  constructor(status, message, details) {
-    super(message);
-    this.status = status;
-    this.details = details;
-    this.expose = true;
-  }
-}
+// Middleware centralizado de errores; AppError vive en el núcleo compartido.
+import { AppError, badRequest, notFound } from '../public/js/core/errors.js';
 
-export const badRequest = (msg, details) => new AppError(400, msg, details);
-export const notFound = (msg = 'Recurso no encontrado.') => new AppError(404, msg);
+export { AppError, badRequest, notFound };
 
 export function errorHandler(err, req, res, _next) {
   let status = err.status || err.statusCode || 500;

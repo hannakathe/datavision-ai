@@ -336,3 +336,28 @@ main { padding: 24px 28px 48px; outline: none; display: flex; flex-direction: co
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Consola de datos ---------- */
+.console { background: #0d1b1a; color: #d6ebe8; border-radius: 12px; overflow: hidden; border: 1px solid #1e3633; }
+.console-out { font-family: Consolas, "Cascadia Mono", "Courier New", monospace; font-size: 0.85rem; padding: 14px 16px; height: 380px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+.console-line { white-space: pre-wrap; overflow-wrap: anywhere; }
+.console-line.cmd { color: #8fe0d5; margin-top: 6px; }
+.console-line.ok { color: #7ee2a0; }
+.console-line.err { color: #ff9b91; }
+.console-line.warn { color: #f2c66d; }
+.console-line.info { color: #b8cbc8; }
+.console-line.help { display: grid; grid-template-columns: minmax(180px, 330px) 1fr; gap: 12px; color: #b8cbc8; }
+.console-line.help code { color: #f2c66d; }
+.console-line a { color: #8fe0d5; }
+.console-table { overflow-x: auto; margin: 4px 0; }
+.console-table table { border-collapse: collapse; font-size: 0.8rem; }
+.console-table th, .console-table td { border: 1px solid #2a4542; padding: 3px 8px; text-align: left; white-space: nowrap; }
+.console-table th { color: #8fe0d5; }
+.console-prompt { display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px; border-top: 1px solid #1e3633; background: #102321; }
+.console-prompt > span { color: #2fc5b4; font-weight: 700; padding-top: 6px; font-family: Consolas, monospace; }
+.console-in { flex: 1; background: transparent; border: 0; color: #fff; font: 0.9rem Consolas, "Cascadia Mono", monospace; resize: none; padding: 6px 0; outline: none; min-height: 32px; }
+.console-in:focus-visible { outline: none; }
+.console-examples { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
+.chip-btn { border: 1px solid var(--border); background: var(--surface-2); border-radius: 999px; padding: 4px 10px; font: 0.78rem Consolas, monospace; color: var(--text-2); cursor: pointer; }
+.chip-btn:hover { border-color: var(--primary); color: var(--primary-strong); }
+@media (max-width: 860px) { .console-out { height: 300px; } .console-line.help { grid-template-columns: 1fr; gap: 0; } }

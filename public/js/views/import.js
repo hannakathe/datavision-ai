@@ -3,6 +3,8 @@ import { h, clear, icon, toast, loading, dataTable } from '../ui.js';
 import { fmtNumber } from '../core/format.js';
 import { schemaTable, issuesList } from './validation.js';
 
+const STATUS_TEXT = { disponible: 'Disponible', solo_local: 'Solo en la versión local', planificado: 'Ampliación futura (no implementado)' };
+
 const FORMAT_LABELS = { csv: 'CSV', json: 'JSON', xlsx: 'Excel XLSX', sqlite: 'SQLite' };
 
 export async function importView(main) {
@@ -23,19 +25,26 @@ export async function importView(main) {
   const previewEl = h('div', { class: 'preview', 'aria-live': 'polite' });
 
   const methods = (info?.importers || []).map((i) => h('li', { class: `method ${i.status}` },
-    h('span', {}, i.label), h('span', { class: `badge ${i.status === 'disponible' ? 'badge-ok' : 'badge-neutral'}` }, i.status === 'disponible' ? 'Disponible' : 'Ampliación futura (no implementado)')));
+    h('span', {}, i.label), h('span', { class: `badge ${i.status === 'disponible' ? 'badge-ok' : i.status === 'solo_local' ? 'badge-warn' : 'badge-neutral'}` }, STATUS_TEXT[i.status] || i.status)));
 
   clear(main,
     h('div', { class: 'grid-import' },
       h('section', { class: 'card' }, h('h3', {}, 'Importar un archivo'), input, drop, previewEl),
       h('aside', { class: 'card side' },
         h('h3', {}, 'Métodos de entrada'), h('ul', { class: 'methods' }, methods),
-        h('h4', {}, 'Desde la consola de Node.js'),
+        h('h4', {}, 'Consola de datos (en la app)'),
+        h('pre', { class: 'code' }, 'nuevo Ventas | producto, cantidad
+fila Lápiz, 10
+guardar'),
+        h('h4', {}, 'Consola de Node.js (versión local)'),
         h('pre', { class: 'code' }, 'npm run import -- ruta/archivo.csv --name "Mis ventas"'),
         h('p', { class: 'muted small' }, 'También admite --sheet (Excel), --table (SQLite) y --description. Recarga la lista de conjuntos para ver el resultado.'),
-        h('h4', {}, 'Base de datos SQLite'),
+        h('h4', {}, 'Base de datos SQLite (versión local)'),
         h('p', { class: 'muted small' }, 'Sube un archivo .db/.sqlite: se abre en modo solo lectura, eliges una tabla de la lista y se importa. No se permite SQL libre.'),
-        h('a', { class: 'btn btn-ghost btn-sm', href: '#/editor' }, icon('edit'), 'Abrir editor manual'))));
+        api.mode === 'browser' ? h('p', { class: 'notice small' }, 'Estás en el modo navegador (p. ej. GitHub Pages): los datos se guardan solo en este navegador. La consola de Node.js y los archivos SQLite requieren ejecutar la versión local.') : null,
+        h('div', { class: 'form-actions' },
+          h('a', { class: 'btn btn-ghost btn-sm', href: '#/consola' }, icon('code'), 'Abrir consola de datos'),
+          h('a', { class: 'btn btn-ghost btn-sm', href: '#/editor' }, icon('edit'), 'Abrir editor manual')))));
 
   async function select(f, opts = {}) {
     file = f;
