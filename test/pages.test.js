@@ -29,11 +29,26 @@ test('reglas de gestión compartidas (usadas por el modo navegador)', () => {
   assert.ok(report.length);
 });
 
+test('index.html en la raíz solo referencia archivos versionados del repositorio (GitHub Pages desde la rama)', async () => {
+  const { VENDOR_FILES } = await import('../scripts/vendor.js');
+  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const refs = [...html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)].map((m) => m[1]);
+  assert.ok(refs.length >= 4);
+  for (const ref of refs) {
+    assert.doesNotMatch(ref, /^\//, `ruta absoluta: ${ref}`);
+    assert.ok(fs.existsSync(path.join(root, ref)), `no existe ${ref}`);
+  }
+  for (const [to, from] of Object.entries(VENDOR_FILES)) {
+    assert.ok(fs.readFileSync(path.join(root, 'vendor', to)).equals(fs.readFileSync(path.join(root, from))), `vendor/${to} desactualizado: ejecuta npm run vendor`);
+  }
+  assert.ok(fs.existsSync(path.join(root, '.nojekyll')));
+});
+
 test('build:pages genera una versión estática completa con rutas relativas', () => {
   const r = spawnSync(process.execPath, ['--no-warnings', 'scripts/build-pages.js'], { cwd: root, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stderr);
   const dist = path.join(root, 'dist');
-  for (const f of ['index.html', 'js/app.js', 'js/local-api.js', 'vendor/chart.js/chart.umd.min.js', 'vendor/papaparse/papaparse.min.js', 'vendor/exceljs/exceljs.min.js', 'data/demo/ventas.csv', 'data/demo/recursos_humanos.xlsx', '.nojekyll']) {
+  for (const f of ['index.html', 'public/js/app.js', 'public/js/local-api.js', 'public/css/styles.css', 'vendor/chart.js/chart.umd.min.js', 'vendor/papaparse/papaparse.min.js', 'vendor/exceljs/exceljs.min.js', 'data/demo/ventas.csv', 'data/demo/recursos_humanos.xlsx', '.nojekyll']) {
     assert.ok(fs.existsSync(path.join(dist, f)), `falta ${f}`);
   }
   const html = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');

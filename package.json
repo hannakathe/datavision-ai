@@ -16,7 +16,8 @@
     "demo:generate": "node scripts/generate-demo.js",
     "test": "node --no-warnings --test --test-concurrency=1 \"test/**/*.test.js\"",
     "build:pages": "node scripts/build-pages.js",
-    "preview:pages": "node scripts/preview-pages.js"
+    "preview:pages": "node scripts/preview-pages.js",
+    "vendor": "node scripts/vendor.js"
   },
   "license": "MIT",
   "dependencies": {

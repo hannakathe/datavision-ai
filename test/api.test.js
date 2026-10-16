@@ -58,6 +58,11 @@ test('rutas principales: salud, importadores y estático', async () => {
   const html = await fetch(base.replace('/api', '/'));
   assert.match(await html.text(), /DataVision AI/);
   assert.equal((await fetch(base.replace('/api', '/vendor/chart.js/chart.umd.min.js'))).status, 200);
+  assert.equal((await fetch(base.replace('/api', '/public/js/app.js'))).status, 200);
+  assert.equal((await fetch(base.replace('/api', '/data/demo/ventas.csv'))).status, 200);
+  for (const hidden of ['/server/app.js', '/package.json', '/storage/datavision.sqlite', '/node_modules/express/package.json']) {
+    assert.equal((await fetch(base.replace('/api', hidden))).status, 404, `${hidden} no debe exponerse`);
+  }
   assert.equal((await json('GET', '/no-existe')).status, 404);
   assert.equal(html.headers.get('x-content-type-options'), 'nosniff');
 });

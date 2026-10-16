@@ -18,11 +18,12 @@ export function createApp(store) {
   app.use(securityHeaders);
   app.use(express.json({ limit: '10mb' }));
   app.use('/api', apiRouter(store));
-  app.use('/vendor/chart.js', express.static(path.join(ROOT, 'node_modules', 'chart.js', 'dist')));
-  app.use('/vendor/papaparse', express.static(path.join(ROOT, 'node_modules', 'papaparse')));
-  app.use('/vendor/exceljs', express.static(path.join(ROOT, 'node_modules', 'exceljs', 'dist')));
+  // Misma estructura que GitHub Pages (index.html en la raíz). Solo se exponen estas carpetas,
+  // nunca server/, storage/ ni node_modules/.
+  app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
+  app.use('/public', express.static(path.join(ROOT, 'public')));
+  app.use('/vendor', express.static(path.join(ROOT, 'vendor')));
   app.use('/data/demo', express.static(path.join(ROOT, 'data', 'demo')));
-  app.use(express.static(path.join(ROOT, 'public'), { extensions: ['html'] }));
   app.use(errorHandler);
   return app;
 }

@@ -163,8 +163,17 @@ export async function runCommand(input, print) {
       print('ok', r.loaded.length ? `✔ Cargados: ${r.loaded.join(', ')}` : 'Los datos de demostración ya estaban cargados.');
       return;
     }
-    default:
+    default: {
+      // Si hay un conjunto en preparación, lo más probable es que se haya olvidado «fila»: se sugiere el comando correcto.
+      if (d) {
+        const parts = trimmed.includes(',') || trimmed.includes(';') ? splitValues(trimmed) : trimmed.split(/\s+/);
+        if (parts.length === d.columns.length) {
+          throw new Error(`Comando desconocido «${cmd}». Para añadir una fila escribe «fila» y separa los valores con comas:\n  fila ${parts.join(', ')}`);
+        }
+        throw new Error(`Comando desconocido «${cmd}». Para añadir una fila usa: fila ${d.columns.map((c) => `<${c}>`).join(', ')}`);
+      }
       throw new Error(`Comando desconocido «${cmd}». Escribe «ayuda» para ver los comandos.`);
+    }
   }
 }
 

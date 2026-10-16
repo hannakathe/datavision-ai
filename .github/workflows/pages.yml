@@ -1,9 +1,9 @@
-# Publica la versión estática (modo navegador) en GitHub Pages en cada push a main.
-name: Publicar en GitHub Pages
+# Alternativa OPCIONAL de publicación con GitHub Actions (Settings → Pages → Source: GitHub Actions).
+# La opción recomendada es «Deploy from a branch → main → / (root)», que no necesita este workflow.
+# Por eso solo se ejecuta manualmente (pestaña Actions → Run workflow) y no falla en cada push.
+name: Publicar en GitHub Pages (Actions, manual)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

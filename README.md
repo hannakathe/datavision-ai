@@ -74,8 +74,9 @@ npm run dev
 | `npm run cli -- list` | Lista los conjuntos almacenados |
 | `npm run cli -- delete <id>` | Elimina un conjunto |
 | `npm run seed` | Carga los datos de demostración que falten |
-| `npm run build:pages` | Genera la versión estática para GitHub Pages en `dist/` |
+| `npm run build:pages` | Copia en `dist/` solo los archivos estáticos (para la vista previa o el workflow opcional) |
 | `npm run preview:pages` | Sirve `dist/` en `http://localhost:4173/datavision-ai/` como lo haría Pages |
+| `npm run vendor` | Copia chart.js, papaparse y exceljs de `node_modules` a `vendor/` (ejecutar tras actualizarlas) |
 | `npm run demo:generate` | Regenera (de forma determinista) los archivos de `data/demo` y `data/samples` |
 
 ## Configuración
@@ -246,7 +247,7 @@ Muestras para probar casos no incluidos en los ejemplos (`data/samples/`): `proy
 npm test
 ```
 
-Resultado de la última ejecución: **31 pruebas, 31 aprobadas, 0 fallidas**.
+Resultado de la última ejecución: **32 pruebas, 32 aprobadas, 0 fallidas**.
 
 | Archivo | Cubre |
 |---|---|
@@ -254,7 +255,7 @@ Resultado de la última ejecución: **31 pruebas, 31 aprobadas, 0 fallidas**.
 | `test/importers.test.js` | CSV (coma, `;`, Latin-1), JSON anidado, XLSX con fórmulas y fechas, SQLite (tablas, nombre de tabla malicioso, archivo falso), JSON inválido, archivo vacío, extensión no soportada, encabezados `__proto__`/vacíos/repetidos |
 | `test/api.test.js` | Rutas principales y estáticos, cabeceras de seguridad, importación CSV/JSON/XLSX/SQLite por HTTP, archivo > límite (413), conjunto vacío, entrada manual y su validación, renombrar, cambiar tipos, consulta segura, limpieza en copia, exportación con escape de fórmulas, eliminación en cascada, configuraciones de dashboard (guardar/recuperar/actualizar/eliminar), **persistencia tras cerrar y reabrir SQLite**, carga única de demos |
 | `test/cli.test.js` | Importación por consola de Node (CSV, JSON, SQLite), `list`, `delete` y mensajes/códigos de error |
-| `test/pages.test.js` | Separación de valores de la consola de datos, reglas de gestión compartidas con el modo navegador y generación de la versión estática (archivos y rutas relativas) |
+| `test/pages.test.js` | Separación de valores de la consola de datos, reglas de gestión compartidas con el modo navegador y generación de la versión estática, `index.html` en la raíz con rutas relativas a archivos existentes y `vendor/` sincronizado con `node_modules` |
 
 **Pruebas manuales realizadas en el navegador** (no automatizadas): carga de dashboards de varios conjuntos, clic en barras para ver los registros que las respaldan, filtros por casillas, pestaña de análisis con filtros, importación de un CSV nuevo por arrastrar y soltar → dashboard, editor manual con pegado de datos y fila añadida, guardado de configuración y recuperación tras recargar, vista móvil (375 px, sin desplazamiento horizontal) y modos claro/oscuro. En la **versión estática** (`npm run preview:pages`): carga automática de los 5 demos (incluido el Excel) sin servidor, consola de datos (nuevo, fila, guardar, agregar, info, eliminar con confirmación, errores), importación de CSV → dashboard, guardar configuración y recuperarla tras recargar, cambio de tipo, limpieza, exportación CSV y rechazo de archivos SQLite con explicación.
 
@@ -272,8 +273,11 @@ Resultado de la última ejecución: **31 pruebas, 31 aprobadas, 0 fallidas**.
 │   ├── routes/api.js       Rutas REST
 │   ├── importers/          csv.js, json.js, xlsx.js, sqlite.js, index.js (registro)
 │   └── services/           ingest.js, datasets.js (negocio con SQLite), demo.js
+├── index.html              Página principal (en la raíz para GitHub Pages; el servidor local sirve la misma)
+├── .nojekyll               Indica a GitHub Pages que publique los archivos tal cual
+├── vendor/                 chart.js, papaparse y exceljs listos para el navegador (versionados)
 ├── public/
-│   ├── index.html, css/styles.css, favicon.svg
+│   ├── css/styles.css, favicon.svg
 │   └── js/
 │       ├── core/           types, stats, quality, data, dashboard, insights, format, parsers,
 │       │                   ingest, clean, manage, errors, demo-list (compartidos con el servidor)
@@ -326,14 +330,24 @@ Limitaciones:
 
 ## Publicar en GitHub Pages
 
-GitHub Pages solo sirve archivos estáticos: no puede ejecutar el servidor Node. Por eso el repositorio incluye una **versión estática** (`npm run build:pages`) y un workflow (`.github/workflows/pages.yml`) que la publica automáticamente. Si al abrir la página ves un 404 o el README, es porque Pages está sirviendo la rama directamente (y ahí no hay un `index.html` en la raíz): hay que cambiar la fuente a **GitHub Actions**.
+GitHub Pages solo sirve archivos estáticos (no ejecuta el servidor Node). Por eso:
 
-1. Haz commit y push a `main` (incluida la carpeta `.github/`).
-2. En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Abre la pestaña **Actions**: el workflow «Publicar en GitHub Pages» instala dependencias, ejecuta `npm test`, genera `dist/` y la publica. Si no se inició solo, ejecútalo con **Run workflow**.
-4. Al terminar, la URL aparece en el resumen del workflow y en Settings → Pages (normalmente `https://hannakathe.github.io/datavision-ai/`).
+- `index.html` está en la **raíz** del repositorio y usa rutas relativas (`public/…`, `vendor/…`, `data/demo/…`).
+- Las librerías del navegador están versionadas en `vendor/` (no hace falta `node_modules` en Pages).
+- Sin servidor, la app entra sola en **modo navegador** (IndexedDB). Con `npm start` / `npm run dev` el servidor sirve exactamente la misma página y usa SQLite.
 
-Para probar la versión estática en tu equipo antes de publicarla:
+### Opción recomendada: publicar desde la rama
+
+1. Haz commit y push a `main` (incluidos `index.html`, `vendor/` y `.nojekyll`).
+2. En GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
+3. Branch: **`main`**, carpeta: **`/ (root)`** → **Save**.
+4. Espera uno o dos minutos (pestaña **Actions** → «pages build and deployment») y abre `https://hannakathe.github.io/datavision-ai/`. Si ves la versión anterior, recarga con Ctrl+F5.
+
+### Opción alternativa: GitHub Actions
+
+Si prefieres que antes de publicar se ejecuten las pruebas: **Source: GitHub Actions** y, en la pestaña **Actions**, ejecuta manualmente «Publicar en GitHub Pages (Actions, manual)» con **Run workflow**. Usa una sola de las dos opciones.
+
+### Probar en tu equipo como lo haría Pages
 
 ```bash
 npm run build:pages
@@ -345,4 +359,8 @@ npm run preview:pages
 
 y abre `http://localhost:4173/datavision-ai/`.
 
-La versión local con servidor (`npm start` o `npm run dev`) no cambia y sigue usando SQLite. Para empezar de cero en local, detén el servidor y borra la carpeta `storage/`; en Pages, borra los datos del sitio desde el navegador.
+Si actualizas chart.js, papaparse o exceljs, ejecuta `npm run vendor` y haz commit de `vendor/`; una prueba automática avisa si quedan desactualizadas.
+
+Al publicar desde la rama, cualquier archivo versionado del repositorio queda accesible en la URL de Pages (por ejemplo el código de `server/`); no contiene secretos, y `storage/` (tu base de datos local) está excluida por `.gitignore`.
+
+Para empezar de cero en local, detén el servidor y borra `storage/`; en Pages, borra los datos del sitio desde el navegador.

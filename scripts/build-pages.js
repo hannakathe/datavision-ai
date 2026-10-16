@@ -1,4 +1,5 @@
-// Genera la versión estática para GitHub Pages en dist/ (sin servidor: los datos se guardan en el navegador).
+// Copia en dist/ solo los archivos que necesita la versión estática, para probarla con npm run preview:pages
+// (o publicarla con el workflow manual). GitHub Pages también puede servir directamente la raíz del repositorio.
 // Uso: npm run build:pages
 import fs from 'node:fs';
 import path from 'node:path';
@@ -11,10 +12,10 @@ const copy = (from, to) => {
 };
 
 fs.rmSync(OUT, { recursive: true, force: true });
-copy('public', '.');
-copy('node_modules/chart.js/dist/chart.umd.min.js', 'vendor/chart.js/chart.umd.min.js');
-copy('node_modules/papaparse/papaparse.min.js', 'vendor/papaparse/papaparse.min.js');
-copy('node_modules/exceljs/dist/exceljs.min.js', 'vendor/exceljs/exceljs.min.js');
+// Misma estructura que la raíz del repositorio (la que GitHub Pages sirve con «Deploy from a branch → / (root)»).
+copy('index.html', 'index.html');
+copy('public', 'public');
+copy('vendor', 'vendor');
 copy('data/demo', 'data/demo');
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 
